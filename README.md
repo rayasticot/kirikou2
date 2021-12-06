@@ -1,2 +1,2 @@
-# kirikou2
-La suite de Kirikou
+# kirikou
+KIRIKOU SUR DS
