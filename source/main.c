@@ -21,8 +21,31 @@ struct map{
 	int hz5;
 
     char* background;
+
+	u8 cinematic;
+};
+struct cinematic{
+		u8 sprite1;
+		u8 x1[5];
+		u8 y1[5];
+		u8 speedx1[5];
+		u8 speedy1[5];
+
+		u8 sprite2;
+		u8 x2[5];
+		u8 y2[5];
+		u8 speedx2[5];
+		u8 speedy2[5];
+
+		int time[5]; // en frame (60 = 1 sec )
+
+		char* sound[5];
+		int hz[5];
+
+		char* bg[5];
 };
 struct map benin[3][3];
+struct cinematic cinema[10];
 
 int pos[3][3] = {
 	{0, 0, 0},
@@ -132,5 +155,16 @@ void loadRoom(u8 x, u8 y){
 	}
 	if(benin[x][y].background != NULL){
 		NF_CreateTiledBg(1, 3, benin[x][y].background);
+	}
+}
+void loadCine(int id){
+	if(cinema[id].sprite1 != NULL){
+	]	NF_CreateSprite(1, i+1, cinema[id].sprite1, cinema[id].sprite1, cinema[id].x1[0], cinema[id].y1[0]);
+	}]
+	if(cinema[id].sprite1 != NULL){
+		NF_CreateSprite(1, i+1, cinema[id].sprite1, cinema[id].sprite1, cinema[id].x1[0], cinema[id].y1[0]);
+	}
+	for(int i = 0; i < 5; i++){
+		
 	}
 }

@@ -4,8 +4,8 @@
 
 
 void Title(){
-    NF_LoadTiledBg("bg/kirikoutitle", "bg/kirikoutitle", 256, 256);
-    NF_CreateTiledBg(0, 3, "bg/kirikoutitle");
+    NF_LoadTiledBg("bg/kirikou2", "bg/kirikou2", 256, 256);
+    NF_CreateTiledBg(0, 3, "bg/kirikou2");
 
     while(1){
         scanKeys();

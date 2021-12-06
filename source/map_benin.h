@@ -138,5 +138,29 @@ void setLevel(){
     benin[2][0].object[0] = 1;
     benin[2][0].obj_x[0] = 200;
     benin[2][0].obj_y[0] = 112;
+
+
+
+    benin[0][2]
+
+}
+void setCine(){
+    cinema[0].sprite1 = 5;
+    cinema[0].x1[0] = 56;
+    cinema[0].y1[0] = 64;
+
+    cinema[0].sprite2 = 4;
+    cinema[0].x2[0] = 144;
+    cinema[0].y2[0] = 64;
+
+    cinema[0].time[0] = 120;
+
+    cinema[0].x1[1] = 112;
+    cinema[0].y1[1] = 64;
+    
+    cinema[0].x2[1] = 232;
+    cinema[0].y2[1] = 64;
+
+    cinema[0].time[1] = 120;
 }
 #endif
