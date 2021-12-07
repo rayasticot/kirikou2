@@ -8,17 +8,8 @@ struct map{
     u8 obj_y[10];
 	u8 npcsprite;
 
-	char* sound0;
-	char* sound1;
-	char* sound2;
-	char* sound3;
-	char* sound4;
-
-	int hz1;
-	int hz2;
-	int hz3;
-	int hz4;
-	int hz5;
+	char* sound[5];
+	int hz[5];
 
     char* background;
 
@@ -131,20 +122,10 @@ void loadRoom(u8 x, u8 y){
 			break;
 		}
 	}
-	if(benin[x][y].sound0 != NULL){
-		NF_LoadRawSound(benin[x][y].sound0, 1, benin[x][y].hz1, 0);
-	}
-	if(benin[x][y].sound1 != NULL){
-		NF_LoadRawSound(benin[x][y].sound1, 2, benin[x][y].hz2, 0);
-	}
-	if(benin[x][y].sound2 != NULL){
-		NF_LoadRawSound(benin[x][y].sound2, 3, benin[x][y].hz3, 0);
-	}
-	if(benin[x][y].sound3 != NULL){
-		NF_LoadRawSound(benin[x][y].sound3, 4, benin[x][y].hz4, 0);
-	}
-	if(benin[x][y].sound4 != NULL){
-		NF_LoadRawSound(benin[x][y].sound4, 5, benin[x][y].hz5, 0);
+	for(int i = 0; i < 5; i++){
+		if(benin[x][y].sound[i] != NULL){
+			NF_LoadRawSound(benin[x][y].sound[i], i+1, benin[x][y].hz[i], 0);
+		}
 	}
 	if(benin[x][y].background != NULL){
 		NF_CreateTiledBg(1, 3, benin[x][y].background);
@@ -173,5 +154,5 @@ void loadCine(int id){
 			mainLoop();
 		}
 	}
-	NF_CreateTiledBg(0, 3, "bg/kirikou2");
+	NF_CreateTiledBg(0, 3, "bg/level1");
 }

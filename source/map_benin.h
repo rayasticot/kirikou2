@@ -32,16 +32,16 @@ void setLevel(){
     benin[1][2].npcsprite = 2;
 
 	benin[1][2].background = "bg/level1";
-    benin[1][2].sound0 = "sound/benin/npc0/h0";
-    benin[1][2].hz1 = 11025;
-    benin[1][2].sound1 = "sound/benin/npc0/h1";
-    benin[1][2].hz2 = 11025;
-    benin[1][2].sound2 = "sound/benin/npc0/h2";
-    benin[1][2].hz3 = 11025;
-    benin[1][2].sound3 = "sound/benin/npc0/h3";
-    benin[1][2].hz4 = 11025;
-    benin[1][2].sound4 = "sound/benin/npc0/h4";
-    benin[1][2].hz5 = 11025;
+    benin[1][2].sound[0] = "sound/benin/npc0/h0";
+    benin[1][2].hz[0] = 11025;
+    benin[1][2].sound[1] = "sound/benin/npc0/h1";
+    benin[1][2].hz[1] = 11025;
+    benin[1][2].sound[2] = "sound/benin/npc0/h2";
+    benin[1][2].hz[2] = 11025;
+    benin[1][2].sound[3] = "sound/benin/npc0/h3";
+    benin[1][2].hz[3] = 11025;
+    benin[1][2].sound[4] = "sound/benin/npc0/h4";
+    benin[1][2].hz[4] = 11025;
     
 
 
@@ -58,16 +58,16 @@ void setLevel(){
     benin[2][1].obj_y[2] = 64;
     benin[2][1].npcsprite = 3;
 
-    benin[2][1].sound0 = "sound/benin/npc1/h0";
-    benin[2][1].hz1 = 11025;
-    benin[2][1].sound1 = "sound/benin/npc1/h1";
-    benin[2][1].hz2 = 11025;
-    benin[2][1].sound2 = "sound/benin/npc1/h2";
-    benin[2][1].hz3 = 8000;
-    benin[2][1].sound3 = "sound/benin/npc1/h3";
-    benin[2][1].hz4 = 11025;
-    benin[2][1].sound4 = "sound/benin/npc1/h4";
-    benin[2][1].hz5 = 11025;
+    benin[2][1].sound[0] = "sound/benin/npc1/h0";
+    benin[2][1].hz[0] = 11025;
+    benin[2][1].sound[1] = "sound/benin/npc1/h1";
+    benin[2][1].hz[1] = 11025;
+    benin[2][1].sound[2] = "sound/benin/npc1/h2";
+    benin[2][1].hz[2] = 8000;
+    benin[2][1].sound[3] = "sound/benin/npc1/h3";
+    benin[2][1].hz[3] = 11025;
+    benin[2][1].sound[4] = "sound/benin/npc1/h4";
+    benin[2][1].hz[4] = 11025;
 
 
 
@@ -80,16 +80,16 @@ void setLevel(){
     benin[2][2].obj_y[1] = 32;
     benin[2][2].npcsprite = 4;
 
-    benin[2][2].sound0 = "sound/benin/npc2/h0";
-    benin[2][2].hz1 = 11025;
-    benin[2][2].sound1 = "sound/benin/npc2/h1";
-    benin[2][2].hz2 = 11025;
-    benin[2][2].sound2 = "sound/benin/npc2/h2";
-    benin[2][2].hz3 = 11025;
-    benin[2][2].sound3 = "sound/benin/npc2/h3";
-    benin[2][2].hz4 = 11025;
-    benin[2][2].sound4 = "sound/benin/npc2/h4";
-    benin[2][2].hz5 = 11025;
+    benin[2][2].sound[0] = "sound/benin/npc2/h0";
+    benin[2][2].hz[0] = 11025;
+    benin[2][2].sound[1] = "sound/benin/npc2/h1";
+    benin[2][2].hz[1] = 11025;
+    benin[2][2].sound[2] = "sound/benin/npc2/h2";
+    benin[2][2].hz[2] = 11025;
+    benin[2][2].sound[3] = "sound/benin/npc2/h3";
+    benin[2][2].hz[3] = 11025;
+    benin[2][2].sound[4] = "sound/benin/npc2/h4";
+    benin[2][2].hz[4] = 11025;
 
 
 
@@ -114,16 +114,16 @@ void setLevel(){
     benin[0][1].obj_y[4] = 64;
     benin[0][1].npcsprite = 5;
 
-    benin[0][1].sound0 = "sound/benin/npc3/h0";
-    benin[0][1].hz1 = 11025;
-    benin[0][1].sound1 = "sound/benin/npc3/h1";
-    benin[0][1].hz2 = 11025;
-    benin[0][1].sound2 = "sound/benin/npc3/h2";
-    benin[0][1].hz3 = 11025;
-    benin[0][1].sound3 = "sound/benin/npc3/h3";
-    benin[0][1].hz4 = 11025;
-    benin[0][1].sound4 = "sound/benin/npc3/h4";
-    benin[0][1].hz5 = 11025;
+    benin[0][1].sound[0] = "sound/benin/npc3/h0";
+    benin[0][1].hz[0] = 11025;
+    benin[0][1].sound[1] = "sound/benin/npc3/h1";
+    benin[0][1].hz[1] = 11025;
+    benin[0][1].sound[2] = "sound/benin/npc3/h2";
+    benin[0][1].hz[2] = 11025;
+    benin[0][1].sound[3] = "sound/benin/npc3/h3";
+    benin[0][1].hz[3] = 11025;
+    benin[0][1].sound[4] = "sound/benin/npc3/h4";
+    benin[0][1].hz[4] = 11025;
 
 
 
@@ -151,7 +151,6 @@ void setLevel(){
     benin[1][0].object[3] = 1;
     benin[1][0].obj_x[3] = 184;
     benin[1][0].obj_y[3] = 64;
-
 
 }
 void setCine(){
