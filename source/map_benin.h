@@ -140,27 +140,23 @@ void setLevel(){
     benin[2][0].obj_y[0] = 112;
 
 
-
-    benin[0][2]
-
 }
 void setCine(){
-    cinema[0].sprite1 = 5;
-    cinema[0].x1[0] = 56;
-    cinema[0].y1[0] = 64;
 
-    cinema[0].sprite2 = 4;
-    cinema[0].x2[0] = 144;
-    cinema[0].y2[0] = 64;
+    cinema[0].bg[0] = "bg/dodjiback";
+    cinema[0].sound[0] = "sound/cine0";
+    cinema[0].hz[0] = 11025;
+    cinema[0].time[0] = 370;
 
-    cinema[0].time[0] = 120;
+    cinema[0].bg[1] = "bg/kiriback";
+    cinema[0].sound[1] = "sound/cine1";
+    cinema[0].hz[1] = 11025;
+    cinema[0].time[1] = 240;
 
-    cinema[0].x1[1] = 112;
-    cinema[0].y1[1] = 64;
-    
-    cinema[0].x2[1] = 232;
-    cinema[0].y2[1] = 64;
+    cinema[0].bg[2] = "bg/dodjiback";
+    cinema[0].sound[2] = "sound/cine2";
+    cinema[0].hz[2] = 11025;
+    cinema[0].time[2] = 180;
 
-    cinema[0].time[1] = 120;
 }
 #endif

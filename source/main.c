@@ -25,24 +25,12 @@ struct map{
 	u8 cinematic;
 };
 struct cinematic{
-		u8 sprite1;
-		u8 x1[5];
-		u8 y1[5];
-		u8 speedx1[5];
-		u8 speedy1[5];
+	int time[5];
 
-		u8 sprite2;
-		u8 x2[5];
-		u8 y2[5];
-		u8 speedx2[5];
-		u8 speedy2[5];
+	char* sound[5];
+	int hz[5];
 
-		int time[5]; // en frame (60 = 1 sec )
-
-		char* sound[5];
-		int hz[5];
-
-		char* bg[5];
+	char* bg[5];
 };
 struct map benin[3][3];
 struct cinematic cinema[10];
@@ -57,6 +45,7 @@ int npcpoint;
 
 
 void loadRoom(u8 x, u8 y);
+void loadCine(int id);
 
 #include "functions.h"
 #include "kirikou.h"
@@ -89,11 +78,15 @@ int main(int argc, char **argv) {
     loadSprite(1, "sprite/npc3", 5, 16, 32, false);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);
+	NF_LoadTiledBg("bg/dodjiback", "bg/dodjiback", 256, 256);
+	NF_LoadTiledBg("bg/kiriback", "bg/kiriback", 256, 256);
 
 	setLevel();
+	setCine();
 
 	Title();
 
+	loadCine(0);
 	kirikouStart(120, 120);
 	loadRoom(1, 1);
 
@@ -158,13 +151,27 @@ void loadRoom(u8 x, u8 y){
 	}
 }
 void loadCine(int id){
-	if(cinema[id].sprite1 != NULL){
-	]	NF_CreateSprite(1, i+1, cinema[id].sprite1, cinema[id].sprite1, cinema[id].x1[0], cinema[id].y1[0]);
-	}]
-	if(cinema[id].sprite1 != NULL){
-		NF_CreateSprite(1, i+1, cinema[id].sprite1, cinema[id].sprite1, cinema[id].x1[0], cinema[id].y1[0]);
+	NF_CreateTiledBg(0, 3, cinema[id].bg[0]);
+	NF_LoadRawSound(cinema[id].sound[0], 1, cinema[id].hz[0], 0);
+	NF_PlayRawSound(1, 127, 64, false, 0);
+	for(int i = 1; i < 5; i++){
+		if(cinema[id].sound[i] != 0){
+			NF_LoadRawSound(cinema[id].sound[i], i+1, cinema[id].hz[i], 0);
+		}
 	}
-	for(int i = 0; i < 5; i++){
-		
+	for(int i = 0; i < cinema[id].time[0]; i++){
+		mainLoop();
 	}
+	for(int i = 1; i < 5; i++){
+		if(cinema[id].sound[i] != 0){
+			NF_PlayRawSound(i+1, 127, 64, false, 0);
+		}
+		if(cinema[id].bg[i] != 0){
+			NF_CreateTiledBg(0, 3, cinema[id].bg[i]);
+		}
+		for(int f = 0; f < cinema[id].time[i]; f++){
+			mainLoop();
+		}
+	}
+	NF_CreateTiledBg(0, 3, "bg/kirikou2");
 }
