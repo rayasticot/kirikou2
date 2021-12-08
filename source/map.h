@@ -125,6 +125,13 @@ void setLevel(){
     benin[1][0].object[3] = 1;
     benin[1][0].obj_x[3] = 184;
     benin[1][0].obj_y[3] = 64;
+    benin[1][0].object[4] = 3;
+    benin[1][0].obj_x[4] = 200;
+    benin[1][0].obj_y[4] = 136;
+
+
+
+    dung0[0].background = "bg/bgcave";
 
 }
 void setCine(){

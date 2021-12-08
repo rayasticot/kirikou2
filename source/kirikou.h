@@ -63,6 +63,6 @@ void movementCheck(){
 }
 void movementCheckFin(){
     pos[mx][my] = 1;
-    loadRoom(mx, my);
+    loadRoom(benin[mx][my], benin[tx][ty]);
 }
 #endif

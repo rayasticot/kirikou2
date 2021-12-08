@@ -34,15 +34,19 @@ int pos[3][3] = {
 };
 
 int npcpoint;
+int cavepoint;
+
+struct map current;
 
 
-void loadRoom(u8 x, u8 y);
+void loadRoom(struct map carte, struct map old);
 void loadCine(int id);
 
 #include "functions.h"
 #include "kirikou.h"
-#include "map_benin.h"
+#include "map.h"
 #include "npc.h"
+#include "cave.h"
 
 int main(int argc, char **argv) {
 
@@ -82,26 +86,29 @@ int main(int argc, char **argv) {
 
 	loadCine(0);
 	kirikouStart(120, 120);
-	loadRoom(1, 1);
+	loadRoom(benin[1][1], benin[tx][ty]);
 
 	while(1){
 		
 		mainLoop();
 		scanKeys();
 		kirikouUpdate();
-		if(benin[mx][my].obj_x[npcpoint] != 0){
+		if(current.obj_x[npcpoint] != 0){
 			npcUpdate(npcpoint, mx, my);
+		}
+		if(current.obj_x[cavepoint] != 0){
+			caveUpdate(cavepoint, current, dung0[0]);
 		}
 
 	}
 
 	return 0;
 }
-void loadRoom(u8 x, u8 y){
+void loadRoom(struct map carte, struct map old){
 	soundKill(0);
 	NF_ResetRawSoundBuffers();
 	for(int i = 0; i <= 10; i++){
-		if(benin[tx][ty].object[i] > 0){
+		if(old.object[i] > 0){
 			NF_DeleteSprite(1, i+1);
 		}
 		else{
@@ -109,16 +116,23 @@ void loadRoom(u8 x, u8 y){
 		}
 	}
 	for(int i = 0; i <= 10; i++){
-		if(benin[x][y].object[i] > 0){
-			switch(benin[x][y].object[i]){
+		if(carte.object[i] > 0){
+			switch(carte.object[i]){
 				case 1:
-					NF_CreateSprite(1, i+1, 1, 1, benin[x][y].obj_x[i], benin[x][y].obj_y[i]);
+					NF_CreateSprite(1, i+1, 1, 1, carte.obj_x[i], carte.obj_y[i]);
 					npcpoint = -1;
+					cavepoint = -1;
 					break;
 				case 2:
-					npcStart(i, benin[x][y].obj_x[i], benin[x][y].obj_y[i], benin[x][y].npcsprite);
+					npcStart(i, carte.obj_x[i], carte.obj_y[i], carte.npcsprite);
 					npcpoint = i;
 					break;
+				case 3:
+					caveStart(i, carte.obj_x[i], carte.obj_y[i]);
+					cavepoint = i;
+					break;
+
+
 			}
 		}
 		else{
@@ -126,13 +140,14 @@ void loadRoom(u8 x, u8 y){
 		}
 	}
 	for(int i = 0; i < 5; i++){
-		if(benin[x][y].sound[i] != NULL){
-			NF_LoadRawSound(benin[x][y].sound[i], i+1, benin[x][y].hz[i], 0);
+		if(carte.sound[i] != NULL){
+			NF_LoadRawSound(carte.sound[i], i+1, carte.hz[i], 0);
 		}
 	}
-	if(benin[x][y].background != NULL){
-		NF_CreateTiledBg(1, 3, benin[x][y].background);
+	if(carte.background != NULL){
+		NF_CreateTiledBg(1, 3, carte.background);
 	}
+	current = carte;
 }
 void loadCine(int id){
 	NF_CreateTiledBg(0, 3, cinema[id].bg[0]);
