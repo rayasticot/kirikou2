@@ -35,6 +35,7 @@ int pos[3][3] = {
 
 int npcpoint;
 int cavepoint;
+bool gun = false;
 
 struct map current;
 
@@ -73,11 +74,14 @@ int main(int argc, char **argv) {
     loadSprite(1, "sprite/npc2", 4, 16, 32, false);
     loadSprite(1, "sprite/npc3", 5, 16, 32, false);
     loadSprite(1, "sprite/cave", 7, 32, 32, false);
+    loadSprite(1, "sprite/kirikougun", 8, 16, 32, false);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);
 	NF_LoadTiledBg("bg/dodjiback", "bg/dodjiback", 256, 256);
 	NF_LoadTiledBg("bg/kiriback", "bg/kiriback", 256, 256);
-	NF_LoadTiledBg("bg/bgcave", "bg/bgcave", 256, 256);
+	NF_LoadTiledBg("bg/level4", "bg/bgcave", 256, 256);
+	NF_LoadTiledBg("bg/guncine", "bg/guncine", 256, 256);
+	NF_LoadTiledBg("bg/guncine1", "bg/guncine1", 256, 256);
 
 	setLevel();
 	setCine();
@@ -131,8 +135,6 @@ void loadRoom(struct map carte, struct map old){
 					caveStart(i, carte.obj_x[i], carte.obj_y[i]);
 					cavepoint = i;
 					break;
-
-
 			}
 		}
 		else{
@@ -154,7 +156,7 @@ void loadCine(int id){
 	NF_LoadRawSound(cinema[id].sound[0], 1, cinema[id].hz[0], 0);
 	NF_PlayRawSound(1, 127, 64, false, 0);
 	for(int i = 1; i < 5; i++){
-		if(cinema[id].sound[i] != 0){
+		if(cinema[id].sound[i] != NULL){
 			NF_LoadRawSound(cinema[id].sound[i], i+1, cinema[id].hz[i], 0);
 		}
 	}

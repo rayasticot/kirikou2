@@ -7,6 +7,7 @@ int tx;
 int ty;
 int mx = 1;
 int my = 1;
+int cpos = 0;
 
 void movementCheck();
 void movementCheckFin();
@@ -55,6 +56,25 @@ void kirikouUpdate(){
         movementCheckFin();
     }
     NF_MoveSprite(1, 0, x, y);
+}
+void kirikouGunUpdate(){
+    if(KEY_RIGHT & keysHeld()){
+        x += 1;
+    }
+    if(KEY_LEFT & keysHeld()){
+        x -= 1;
+    }
+    if(KEY_DOWN & keysHeld()){
+        y += 1;
+    }
+    if(KEY_UP & keysHeld()){
+        y -= 1;
+    }
+    if(x > 256 && mx < 2){
+        cpos += 1;
+        x = 0;
+        loadRoom(dung0[cpos], dung0[cpos-1]);
+    }
 }
 void movementCheck(){
     tx = mx;

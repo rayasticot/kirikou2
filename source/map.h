@@ -151,5 +151,15 @@ void setCine(){
     cinema[0].hz[2] = 11025;
     cinema[0].time[2] = 180;
 
+    cinema[1].bg[0] = "bg/guncine";
+    cinema[1].sound[0] = "sound/void";
+    cinema[1].hz[0] = 11025;
+    cinema[1].time[0] = 120;
+
+    cinema[1].bg[1] = "bg/guncine1";
+    cinema[1].sound[1] = "sound/ouais";
+    cinema[1].hz[1] = 11025;
+    cinema[1].time[1] = 120;
+
 }
 #endif
