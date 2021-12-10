@@ -13,6 +13,7 @@ int bulx;
 int buly;
 bool buldir = false;
 bool bul = false;
+bool lock = false;
 
 void movementCheck();
 void movementCheckFin();
@@ -87,11 +88,14 @@ void kirikouGunUpdate(){
         loadRoom(dung[0][cpos], dung[0][opos]);
     }
     if(KEY_A & keysDown()){
-        bulx = x;
-        buly = y;
-        bul = true;
-        buldir = NF_GetSpriteHflip(1, 0);
-        NF_CreateSprite(1, 12, 10, 10, bulx, buly);
+        if(lock == false){
+            bulx = x;
+            buly = y;
+            bul = true;
+            lock = true;
+            buldir = NF_GetSpriteHflip(1, 0);
+            NF_CreateSprite(1, 12, 10, 10, bulx, buly);
+        }
     }
     NF_MoveSprite(1, 0, x, y);
 }
@@ -114,6 +118,7 @@ void bulletUpdate(){
         }
         if(bulx < 0 || bulx > 256){
             bul = false;
+            lock = false;
         }
         NF_MoveSprite(1, 12, bulx, buly);
     }

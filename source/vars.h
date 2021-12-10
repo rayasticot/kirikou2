@@ -7,6 +7,7 @@ extern int my;
 extern int bulx;
 extern int buly;
 extern bool bul;
+extern bool lock;
 extern int pos[3][3];
 
 extern int npcpoint;

@@ -29,5 +29,8 @@ void skullUpdate(int i, struct map carte){
     if(checkCollision(x, y, 16, 32, skullx, skully, 32, 32) == true){
         NF_Error(666, "DEAD", 3);
     }
+    if(checkCollision(bulx, buly, 8, 8, skullx, skully, 32, 32) == true){
+        NF_Error(11, "DEAD", 3);
+    }
 }
 #endif
