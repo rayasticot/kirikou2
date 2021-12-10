@@ -27,8 +27,8 @@ h = open('map.h', 'a')
 
 for i in range(nombre):
     print(str(i))
-    type = input('Type d\'objet: ')
-    type = int(type)
+    type = data['layers'][1]['objects'][i]['type']
+    type = str(type)
     if presen == True:
         sproum = '\n'+name+'['+str(map_x)+']['+str(map_y)
     else:

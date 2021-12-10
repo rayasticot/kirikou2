@@ -131,8 +131,10 @@ void setLevel(){
 
 
 
-    dung0[0].background = "bg/bgcave";
-
+    dung[0][0].background = "bg/bgcave";
+    dung[0][0].object[0] = 4;
+    dung[0][0].obj_x[0] = 200;
+    dung[0][0].obj_y[0] = 32;
 }
 void setCine(){
 
