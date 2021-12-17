@@ -4,6 +4,9 @@
 
 /*
     1 = maison
+    2 = NPC
+    3 = entree cave
+    4 = skoulete
 */
 
 void setLevel(){
@@ -134,7 +137,34 @@ void setLevel(){
     dung[0][0].background = "bg/bgcave";
     dung[0][0].object[0] = 4;
     dung[0][0].obj_x[0] = 200;
-    dung[0][0].obj_y[0] = 32;
+    dung[0][0].obj_y[0] = 128;
+
+    dung[0][1].object[0] = 4;
+    dung[0][1].obj_x[0] = 184;
+    dung[0][1].obj_y[0] = 24;
+    dung[0][1].object[1] = 4;
+    dung[0][1].obj_x[1] = 184;
+    dung[0][1].obj_y[1] = 136;
+
+    dung[0][2].object[0] = 4;
+    dung[0][2].obj_x[0] = 192;
+    dung[0][2].obj_y[0] = 24;
+    dung[0][2].object[1] = 4;
+    dung[0][2].obj_x[1] = 192;
+    dung[0][2].obj_y[1] = 80;
+    dung[0][2].object[2] = 4;
+    dung[0][2].obj_x[2] = 192;
+    dung[0][2].obj_y[2] = 136;
+    
+    dung[0][3].object[0] = 4;
+    dung[0][3].obj_x[0] = 208;
+    dung[0][3].obj_y[0] = 16;
+    dung[0][3].object[1] = 4;
+    dung[0][3].obj_x[1] = 208;
+    dung[0][3].obj_y[1] = 144;
+    dung[0][3].object[2] = 4;
+    dung[0][3].obj_x[2] = 136;
+    dung[0][3].obj_y[2] = 80;
 }
 void setCine(){
 

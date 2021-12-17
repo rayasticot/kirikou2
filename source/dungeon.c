@@ -16,9 +16,7 @@ void Dungeon(){
 		kirikouGunUpdate();
 		bulletUpdate();
 		for(int i = 0; i < 10; i++){
-			if(i - skullnum < 0){
-				skullUpdate(skullpoint+i, current);
-			}
+			skullUpdate(i);
 		}
 	}
 }

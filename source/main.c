@@ -18,6 +18,10 @@ int npcpoint;
 int cavepoint;
 int skullpoint;
 int skullnum;
+int skullx[10];
+int skully[10];
+int dir[10];
+bool skullLive[10];
 bool gun = false;
 
 struct map current;

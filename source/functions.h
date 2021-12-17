@@ -16,7 +16,7 @@ void kirikouGunUpdate();
 void bulletUpdate();
 void npcStart(int i, int x, int y, int sprite);
 void npcUpdate(int i, int posx, int posy);
-void skullStart(int i, int x, int y, int sprite);
-void skullUpdate(int i, struct map carte);
+void skullStart(int i, struct map carte, int x, int y, int sprite);
+void skullUpdate(int i);
 void Dungeon();
 #endif

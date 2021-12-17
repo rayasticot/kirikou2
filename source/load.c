@@ -34,7 +34,7 @@ void loadRoom(struct map carte, struct map old){
 					cavepoint = i;
 					break;
 				case 4:
-					skullStart(i, carte.obj_x[i], carte.obj_y[i], 9);
+					skullStart(i, current, carte.obj_x[i], carte.obj_y[i], 9);
 					if(skullpoint == 0){
 						skullpoint = i;
 					}
