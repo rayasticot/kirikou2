@@ -3,11 +3,11 @@
 
 void skullDeath(int i);
 
-void skullStart(int i, struct map carte, int x, int y, int sprite){
-	NF_CreateSprite(1, i+1, sprite, sprite, x, y);
+void skullStart(int i, struct map carte, int px, int py, int sprite){
+	NF_CreateSprite(1, i+1, sprite, sprite, px, py);
     NF_HflipSprite(1, i+1, true);
-    skullx[i] = x;
-    skully[i] = y;
+    skullx[i] = px;
+    skully[i] = py;
     skullLive[i] = true;
     dir[i] = 0;
 }
@@ -36,6 +36,7 @@ void skullUpdate(int i){
 }
 void skullDeath(int i){
     skully[i] = 220;
+    NF_HflipSprite(1, i+1, false);
     NF_MoveSprite(1, i+1, 256, 220);
     skullLive[i] = false;
 }

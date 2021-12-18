@@ -11,7 +11,7 @@ void loadRoom(struct map carte, struct map old){
 	NF_ResetRawSoundBuffers();
 	for(int i = 0; i <= 10; i++){
 		if(old.object[i] > 0){
-			NF_DeleteSprite(1, i+1);
+			NF_MoveSprite(1, i+1, 256, 192);
 		}
 		else{
 			break;

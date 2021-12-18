@@ -24,7 +24,11 @@ void Dungeon(){
 			x = old.obj_x[4];
 			y = old.obj_y[4];
     		NF_CreateSprite(1, 0, 0, 0, x, y);
+			for(int i = 0; i < 10; i++){
+				skullDeath(i);
+			}
 			loadRoom(old, current);
+    		NF_MoveSprite(1, 12, 256, 192);
 			break;
 		}
 		if(alive == false){

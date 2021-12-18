@@ -129,8 +129,8 @@ void setLevel(){
     benin[1][0].obj_x[3] = 184;
     benin[1][0].obj_y[3] = 64;
     benin[1][0].object[4] = 3;
-    benin[1][0].obj_x[4] = 200;
-    benin[1][0].obj_y[4] = 136;
+    benin[1][0].obj_x[4] = 128;
+    benin[1][0].obj_y[4] = 76;
 	benin[1][0].background = "bg/level1";
 
 
@@ -194,7 +194,7 @@ void setCine(){
     cinema[1].hz[1] = 11025;
     cinema[1].time[1] = 120;
 
-    cinema[2].bg[0] = "bg/kiriback";
+    cinema[2].bg[0] = "bg/dead";
     cinema[2].sound[0] = "sound/crie";
     cinema[2].hz[0] = 11025;
     cinema[2].time[0] = 180;

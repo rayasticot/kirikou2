@@ -135,7 +135,7 @@ void bulletUpdate(){
         else{
             bulx -= 3;
         }
-        if(bulx < 0 || bulx > 256){
+        if(bulx < -16 || bulx > 256){
             bul = false;
             lock = false;
         }

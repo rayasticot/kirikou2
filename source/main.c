@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
     loadSprite(1, "sprite/cave", 7, 32, 32, false);
     loadSprite(1, "sprite/kirikougun", 8, 16, 32, false);
     loadSprite(1, "sprite/skulate", 9, 32, 32, false);
-    loadSprite(1, "sprite/nada", 10, 8, 8, false);
+    loadSprite(1, "sprite/bullets", 10, 8, 8, false);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);
 	NF_LoadTiledBg("bg/dodjiback", "bg/dodjiback", 256, 256);
@@ -75,6 +75,7 @@ int main(int argc, char **argv) {
 	NF_LoadTiledBg("bg/level4", "bg/bgcave", 256, 256);
 	NF_LoadTiledBg("bg/guncine", "bg/guncine", 256, 256);
 	NF_LoadTiledBg("bg/guncine1", "bg/guncine1", 256, 256);
+	NF_LoadTiledBg("bg/dead", "bg/dead", 256, 256);
 
 	setLevel();
 	setCine();
