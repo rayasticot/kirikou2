@@ -131,6 +131,7 @@ void setLevel(){
     benin[1][0].object[4] = 3;
     benin[1][0].obj_x[4] = 200;
     benin[1][0].obj_y[4] = 136;
+	benin[1][0].background = "bg/level1";
 
 
 
@@ -155,7 +156,7 @@ void setLevel(){
     dung[0][2].object[2] = 4;
     dung[0][2].obj_x[2] = 192;
     dung[0][2].obj_y[2] = 136;
-    
+
     dung[0][3].object[0] = 4;
     dung[0][3].obj_x[0] = 208;
     dung[0][3].obj_y[0] = 16;

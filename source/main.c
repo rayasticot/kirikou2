@@ -18,13 +18,17 @@ int npcpoint;
 int cavepoint;
 int skullpoint;
 int skullnum;
+int gameState = 0;
 int skullx[10];
 int skully[10];
 int dir[10];
 bool skullLive[10];
 bool gun = false;
+int cpos = 0;
+int opos = 0;
 
 struct map current;
+struct map old;
 
 
 #include "declarations.h"

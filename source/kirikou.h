@@ -7,8 +7,6 @@ int tx;
 int ty;
 int mx = 1;
 int my = 1;
-int cpos = 0;
-int opos = 0;
 int bulx;
 int buly;
 bool buldir = false;
