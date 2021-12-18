@@ -8,6 +8,7 @@
 void Dungeon(){
 
 	kirikouGunStart();
+	alive = true;
 
     while(1){
 		
@@ -24,6 +25,10 @@ void Dungeon(){
 			y = old.obj_y[4];
     		NF_CreateSprite(1, 0, 0, 0, x, y);
 			loadRoom(old, current);
+			break;
+		}
+		if(alive == false){
+			Dead();
 			break;
 		}
 	}

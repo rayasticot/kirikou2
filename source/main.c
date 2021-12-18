@@ -26,6 +26,7 @@ bool skullLive[10];
 bool gun = false;
 int cpos = 0;
 int opos = 0;
+bool alive = true;
 
 struct map current;
 struct map old;

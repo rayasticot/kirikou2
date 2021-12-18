@@ -194,5 +194,10 @@ void setCine(){
     cinema[1].hz[1] = 11025;
     cinema[1].time[1] = 120;
 
+    cinema[2].bg[0] = "bg/kiriback";
+    cinema[2].sound[0] = "sound/crie";
+    cinema[2].hz[0] = 11025;
+    cinema[2].time[0] = 180;
+
 }
 #endif

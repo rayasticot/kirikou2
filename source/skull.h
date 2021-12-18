@@ -28,7 +28,7 @@ void skullUpdate(int i){
     }
     NF_MoveSprite(1, i+1, skullx[i], skully[i]);
     if(checkCollision(x, y, 16, 32, skullx[i], skully[i], 32, 32) == true){
-        NF_Error(666, "DEAD", 3);
+        alive = false;
     }
     if(checkCollision(bulx, buly, 8, 8, skullx[i], skully[i], 32, 32) == true){
         skullDeath(i);

@@ -19,4 +19,5 @@ void npcUpdate(int i, int posx, int posy);
 void skullStart(int i, struct map carte, int x, int y, int sprite);
 void skullUpdate(int i);
 void Dungeon();
+void Dead();
 #endif

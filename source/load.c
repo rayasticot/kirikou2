@@ -57,6 +57,7 @@ void loadRoom(struct map carte, struct map old){
 	current = carte;
 }
 void loadCine(int id){
+	NF_ResetRawSoundBuffers();
 	NF_CreateTiledBg(0, 3, cinema[id].bg[0]);
 	NF_LoadRawSound(cinema[id].sound[0], 1, cinema[id].hz[0], 0);
 	NF_PlayRawSound(1, 127, 64, false, 0);

@@ -35,29 +35,41 @@ void kirikouUpdate(){
     if(KEY_UP & keysHeld()){
         y -= 1;
     }
-    if(x > 256 && mx < 2){
-        movementCheck();
-        mx += 1;
-        x = 0;
-        movementCheckFin();
+    if(x > 256){
+        x = 256;
+        if(mx < 2){
+            movementCheck();
+            mx += 1;
+            x = 0;
+            movementCheckFin();
+        }
     }
-    if(x < -16 && mx > 0){
-        movementCheck();
-        mx -= 1;
-        x = 240;
-        movementCheckFin();
+    if(x < -16){
+        x = -16;
+        if(mx > 0){
+            movementCheck();
+            mx -= 1;
+            x = 240;
+            movementCheckFin();
+        }
     }
-    if(y > 192 && my < 2){
-        movementCheck();
-        my += 1;
-        y = 0;
-        movementCheckFin();
+    if(y > 192){
+        y = 192;
+        if(my < 2){
+            movementCheck();
+            my += 1;
+            y = 0;
+            movementCheckFin();
+        }
     }
-    if(y < -32 && my > 0){
-        movementCheck();
-        my -= 1;
-        y = 160;
-        movementCheckFin();
+    if(y < -32){
+        y = -32;
+        if(my > 0){
+            movementCheck();
+            my -= 1;
+            y = 160;
+            movementCheckFin();
+        }
     }
     NF_MoveSprite(1, 0, x, y);
 }
@@ -84,6 +96,15 @@ void kirikouGunUpdate(){
         cpos += 1;
         x = 0;
         loadRoom(dung[0][cpos], dung[0][opos]);
+    }
+    if(x < -16){
+        x = -16;
+    }
+    if(y > 192){
+        y = 192;
+    }
+    if(y < -32){
+        y = -32;
     }
     if(KEY_A & keysDown()){
         if(lock == false){

@@ -21,6 +21,7 @@ extern int skully[10];
 extern int dir[10];
 extern int cpos;
 extern int opos;
+extern bool alive;
 
 extern struct map benin[3][3];
 extern struct map dung[5][4];
