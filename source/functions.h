@@ -22,4 +22,6 @@ void skullDeath(int i);
 void Dungeon();
 void Dead();
 void uiUpdate();
+void boleStart(int i, struct map carte, int px, int py);
+void boleUpdate(int i, struct map carte);
 #endif

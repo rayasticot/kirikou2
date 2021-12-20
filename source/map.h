@@ -112,9 +112,14 @@ void setLevel(){
     benin[2][0].object[1] = 1;
     benin[2][0].obj_x[1] = 144;
     benin[2][0].obj_y[1] = 160;
-    benin[2][0].object[0] = 1;
-    benin[2][0].obj_x[0] = 200;
-    benin[2][0].obj_y[0] = 112;
+    benin[2][0].object[2] = 1;
+    benin[2][0].obj_x[2] = 200;
+    benin[2][0].obj_y[2] = 112;
+    benin[2][0].object[3] = 5;
+    benin[2][0].obj_x[3] = 104;
+    benin[2][0].obj_y[3] = 40;
+    benin[2][0].npcsprite = 11;
+    benin[2][0].cinematic = 3;
 
     benin[1][0].object[0] = 1;
     benin[1][0].obj_x[0] = 24;
@@ -198,6 +203,11 @@ void setCine(){
     cinema[2].sound[0] = "sound/crie";
     cinema[2].hz[0] = 11025;
     cinema[2].time[0] = 180;
+
+    cinema[3].bg[0] = "bg/houche";
+    cinema[3].sound[0] = "sound/benin/houche";
+    cinema[3].hz[0] = 11025;
+    cinema[3].time[0] = 720;
 
 }
 #endif

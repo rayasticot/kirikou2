@@ -18,6 +18,9 @@ void overWorld(){
 		if(current.obj_x[cavepoint] != 0){
 			caveUpdate(cavepoint, current, dung[0][0]);
 		}
+		if(current.obj_x[bolepoint] != 0){
+			boleUpdate(bolepoint, current);
+		}
 
 	}
 }

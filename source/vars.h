@@ -13,6 +13,7 @@ extern int pos[3][3];
 extern int npcpoint;
 extern int cavepoint;
 extern int skullpoint;
+extern int bolepoint;
 extern int skullnum;
 extern int gameState;
 extern bool skullLive[10];

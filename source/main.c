@@ -17,6 +17,7 @@ int pos[3][3] = {
 int npcpoint;
 int cavepoint;
 int skullpoint;
+int bolepoint;
 int skullnum;
 int gameState = 0;
 int skullx[10];
@@ -35,6 +36,7 @@ struct map old;
 #include "declarations.h"
 #include "functions.h"
 #include "kirikou.h"
+#include "bole.h"
 #include "map.h"
 #include "npc.h"
 #include "cave.h"
@@ -68,6 +70,7 @@ int main(int argc, char **argv) {
     loadSprite(1, "sprite/kirikougun", 8, 16, 32, false);
     loadSprite(1, "sprite/skulate", 9, 32, 32, false);
     loadSprite(1, "sprite/bullets", 10, 8, 8, false);
+    loadSprite(1, "sprite/bole", 11, 32, 32, false);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);
 	NF_LoadTiledBg("bg/dodjiback", "bg/dodjiback", 256, 256);
@@ -76,6 +79,7 @@ int main(int argc, char **argv) {
 	NF_LoadTiledBg("bg/guncine", "bg/guncine", 256, 256);
 	NF_LoadTiledBg("bg/guncine1", "bg/guncine1", 256, 256);
 	NF_LoadTiledBg("bg/dead", "bg/dead", 256, 256);
+	NF_LoadTiledBg("bg/houche", "bg/houche", 256, 256);
 
 	setLevel();
 	setCine();

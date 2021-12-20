@@ -24,6 +24,7 @@ void loadRoom(struct map carte, struct map old){
 					NF_CreateSprite(1, i+1, 1, 1, carte.obj_x[i], carte.obj_y[i]);
 					npcpoint = -1;
 					cavepoint = -1;
+					bolepoint = -1;
 					break;
 				case 2:
 					npcStart(i, carte.obj_x[i], carte.obj_y[i], carte.npcsprite);
@@ -39,6 +40,10 @@ void loadRoom(struct map carte, struct map old){
 						skullpoint = i;
 					}
 					skullnum += 1;
+					break;
+				case 5:
+					boleStart(i, carte, carte.obj_x[i], carte.obj_y[i]);
+					bolepoint = i;
 					break;
 			}
 		}
