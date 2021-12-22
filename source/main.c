@@ -18,6 +18,7 @@ int npcpoint;
 int cavepoint;
 int skullpoint;
 int bolepoint;
+int boatpoint;
 int skullnum;
 int gameState = 0;
 int skullx[10];
@@ -39,8 +40,10 @@ struct map old;
 #include "bole.h"
 #include "map.h"
 #include "npc.h"
+#include "boat.h"
 #include "cave.h"
 #include "skull.h"
+#include "boat.h"
 
 int main(int argc, char **argv) {
 
@@ -71,6 +74,7 @@ int main(int argc, char **argv) {
     loadSprite(1, "sprite/skulate", 9, 32, 32, false);
     loadSprite(1, "sprite/bullets", 10, 8, 8, false);
     loadSprite(1, "sprite/bole", 11, 32, 32, false);
+    loadSprite(1, "sprite/titanic", 12, 32, 32, false);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);
 	NF_LoadTiledBg("bg/dodjiback", "bg/dodjiback", 256, 256);

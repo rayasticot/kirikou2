@@ -24,4 +24,7 @@ void Dead();
 void uiUpdate();
 void boleStart(int i, struct map carte, int px, int py);
 void boleUpdate(int i, struct map carte);
+void boatStart(int i, int px, int py);
+void boatUpdate(int i);
+void Ocean(struct map next);
 #endif

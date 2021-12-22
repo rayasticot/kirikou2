@@ -138,6 +138,16 @@ void setLevel(){
     benin[1][0].obj_y[4] = 76;
 	benin[1][0].background = "bg/level1";
 
+    benin[0][2].object[0] = 1;
+    benin[0][2].obj_x[0] = 56;
+    benin[0][2].obj_y[0] = 24;
+    benin[0][2].object[1] = 1;
+    benin[0][2].obj_x[1] = 184;
+    benin[0][2].obj_y[1] = 72;
+    benin[0][2].object[2] = 6;
+    benin[0][2].obj_x[2] = 104;
+    benin[0][2].obj_y[2] = 144;
+
 
 
     dung[0][0].background = "bg/bgcave";

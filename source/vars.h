@@ -14,6 +14,7 @@ extern int npcpoint;
 extern int cavepoint;
 extern int skullpoint;
 extern int bolepoint;
+extern int boatpoint;
 extern int skullnum;
 extern int gameState;
 extern bool skullLive[10];

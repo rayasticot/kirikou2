@@ -21,6 +21,9 @@ void overWorld(){
 		if(current.obj_x[bolepoint] != 0){
 			boleUpdate(bolepoint, current);
 		}
+		if(current.obj_x[boatpoint] != 0){
+			boatUpdate(boatpoint);
+		}
 
 	}
 }

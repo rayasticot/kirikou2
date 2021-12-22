@@ -45,6 +45,11 @@ void loadRoom(struct map carte, struct map old){
 					boleStart(i, carte, carte.obj_x[i], carte.obj_y[i]);
 					bolepoint = i;
 					break;
+				case 6:
+					NF_CreateSprite(1, i+1, 12, 12, carte.obj_x[i], carte.obj_y[i]);
+					boatpoint = i;
+					break;
+					
 			}
 		}
 		else{
