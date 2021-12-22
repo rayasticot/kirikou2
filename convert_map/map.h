@@ -11,3 +11,6 @@ benin[0][2].obj_y[1] = 72;
 benin[0][2].object[2] = 6;
 benin[0][2].obj_x[2] = 104;
 benin[0][2].obj_y[2] = 144;
+spain[1][2].object[0] = 5;
+spain[1][2].obj_x[0] = 120;
+spain[1][2].obj_y[0] = 32;

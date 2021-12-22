@@ -25,6 +25,7 @@ void loadRoom(struct map carte, struct map old){
 					npcpoint = -1;
 					cavepoint = -1;
 					bolepoint = -1;
+					boatpoint = -1;
 					break;
 				case 2:
 					npcStart(i, carte.obj_x[i], carte.obj_y[i], carte.npcsprite);

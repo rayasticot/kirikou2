@@ -5,6 +5,10 @@
 #include "struct.h"
 
 struct map benin[3][3];
+struct map spain[3][3];
+struct map franc[3][3];
+struct map chine[3][3];
+struct map retour[3][3];
 struct map dung[5][4];
 struct cinematic cinema[10];
 
@@ -84,6 +88,8 @@ int main(int argc, char **argv) {
 	NF_LoadTiledBg("bg/guncine1", "bg/guncine1", 256, 256);
 	NF_LoadTiledBg("bg/dead", "bg/dead", 256, 256);
 	NF_LoadTiledBg("bg/houche", "bg/houche", 256, 256);
+	NF_LoadTiledBg("bg/sea", "bg/sea", 256, 256);
+	NF_LoadTiledBg("bg/green", "bg/green", 256, 256);
 
 	setLevel();
 	setCine();

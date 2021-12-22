@@ -181,6 +181,15 @@ void setLevel(){
     dung[0][3].object[2] = 4;
     dung[0][3].obj_x[2] = 136;
     dung[0][3].obj_y[2] = 80;
+
+
+    //0.2;1.2;1.0;1.1;2.1
+    spain[1][2].object[0] = 5;
+    spain[1][2].obj_x[0] = 120;
+    spain[1][2].obj_y[0] = 32;
+    spain[1][2].background = "bg/green";
+    spain[1][2].npcsprite = 11;
+    spain[1][2].cinematic = 4;
 }
 void setCine(){
 
