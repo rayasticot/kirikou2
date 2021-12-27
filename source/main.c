@@ -25,6 +25,7 @@ int bolepoint;
 int boatpoint;
 int skullnum;
 int gameState = 0;
+int levelindex = 0;
 int skullx[10];
 int skully[10];
 int dir[10];
@@ -73,6 +74,7 @@ int main(int argc, char **argv) {
     loadSprite(1, "sprite/npc1", 3, 16, 32, false);
     loadSprite(1, "sprite/npc2", 4, 16, 32, false);
     loadSprite(1, "sprite/npc3", 5, 16, 32, false);
+    loadSprite(0, "sprite/ui", 6, 32, 32, false);
     loadSprite(1, "sprite/cave", 7, 32, 32, false);
     loadSprite(1, "sprite/kirikougun", 8, 16, 32, false);
     loadSprite(1, "sprite/skulate", 9, 32, 32, false);
@@ -90,6 +92,7 @@ int main(int argc, char **argv) {
 	NF_LoadTiledBg("bg/houche", "bg/houche", 256, 256);
 	NF_LoadTiledBg("bg/sea", "bg/sea", 256, 256);
 	NF_LoadTiledBg("bg/green", "bg/green", 256, 256);
+	NF_LoadTiledBg("bg/repito", "bg/repito", 256, 256);
 
 	setLevel();
 	setCine();
@@ -98,7 +101,8 @@ int main(int argc, char **argv) {
 
 	loadCine(0);
 	kirikouStart(120, 120);
-	loadRoom(benin[1][1], benin[tx][ty]);
+	loadRoom(benin[1][1], benin[1][1]);
+	setUi();
 	overWorld();
 
 	while(1){

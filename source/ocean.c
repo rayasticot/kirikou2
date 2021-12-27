@@ -25,5 +25,5 @@ void Ocean(struct map next){
         boatx -= 2;
         NF_MoveSprite(1, 1, boatx, 128);
     }
-    loadCine(0);
+    loadRoom(next, current);
 }

@@ -228,5 +228,7 @@ void setCine(){
     cinema[3].hz[0] = 11025;
     cinema[3].time[0] = 720;
 
+    cinema[4].bg[0] = "bg/repito";
+
 }
 #endif

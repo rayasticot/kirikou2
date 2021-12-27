@@ -6,6 +6,7 @@
 
 
 void loadRoom(struct map carte, struct map old){
+	uiUpdate();
 	skullnum = 0;
 	soundKill(0);
 	NF_ResetRawSoundBuffers();

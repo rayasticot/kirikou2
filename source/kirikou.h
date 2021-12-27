@@ -3,8 +3,6 @@
 
 int x;
 int y;
-int tx;
-int ty;
 int mx = 1;
 int my = 1;
 int bulx;
@@ -13,7 +11,6 @@ bool buldir = false;
 bool bul = false;
 bool lock = false;
 
-void movementCheck();
 void movementCheckFin();
 
 
@@ -38,7 +35,7 @@ void kirikouUpdate(){
     if(x > 256){
         x = 256;
         if(mx < 2){
-            movementCheck();
+            pos[mx][my] = 0;
             mx += 1;
             x = 0;
             movementCheckFin();
@@ -47,7 +44,7 @@ void kirikouUpdate(){
     if(x < -16){
         x = -16;
         if(mx > 0){
-            movementCheck();
+            pos[mx][my] = 0;
             mx -= 1;
             x = 240;
             movementCheckFin();
@@ -56,7 +53,7 @@ void kirikouUpdate(){
     if(y > 192){
         y = 192;
         if(my < 2){
-            movementCheck();
+            pos[mx][my] = 0;
             my += 1;
             y = 0;
             movementCheckFin();
@@ -65,7 +62,7 @@ void kirikouUpdate(){
     if(y < -32){
         y = -32;
         if(my > 0){
-            movementCheck();
+            pos[mx][my] = 0;
             my -= 1;
             y = 160;
             movementCheckFin();
@@ -95,7 +92,7 @@ void kirikouGunUpdate(){
         opos = cpos;
         cpos += 1;
         x = 0;
-        loadRoom(dung[0][cpos], dung[0][opos]);
+        loadRoom(dung[gameState][cpos], dung[gameState][opos]);
     }
     if(x < -16){
         x = -16;
@@ -118,14 +115,25 @@ void kirikouGunUpdate(){
     }
     NF_MoveSprite(1, 0, x, y);
 }
-void movementCheck(){
-    tx = mx;
-    ty = my;
-    pos[mx][my] = 0;
-}
 void movementCheckFin(){
     pos[mx][my] = 1;
-    loadRoom(benin[mx][my], benin[tx][ty]);
+    switch(levelindex){ // Je suis un flemmard :) :) :) :) :) :)
+        case 0:
+            loadRoom(benin[mx][my], current);
+            break;
+        case 1:
+            loadRoom(spain[mx][my], current);
+            break;
+        case 2:
+            loadRoom(franc[mx][my], current);
+            break;
+        case 3:
+            loadRoom(chine[mx][my], current);
+            break;
+        case 4:
+            loadRoom(retour[mx][my], current);
+            break;
+    }
 }
 void bulletUpdate(){
     if(bul == true){
