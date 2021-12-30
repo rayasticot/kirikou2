@@ -4,7 +4,12 @@
 
 #include "include.h"
 
-
+void setMinus(){
+	npcpoint = -1;
+	cavepoint = -1;
+	bolepoint = -1;
+	boatpoint = -1;
+}
 void loadRoom(struct map carte, struct map old){
 	uiUpdate();
 	skullnum = 0;
@@ -23,10 +28,7 @@ void loadRoom(struct map carte, struct map old){
 			switch(carte.object[i]){
 				case 1:
 					NF_CreateSprite(1, i+1, 6, 6, carte.obj_x[i], carte.obj_y[i]);
-					npcpoint = -1;
-					cavepoint = -1;
-					bolepoint = -1;
-					boatpoint = -1;
+					setMinus();
 					break;
 				case 2:
 					npcStart(i, carte.obj_x[i], carte.obj_y[i], carte.npcsprite);
@@ -51,7 +53,18 @@ void loadRoom(struct map carte, struct map old){
 					NF_CreateSprite(1, i+1, 5, 5, carte.obj_x[i], carte.obj_y[i]);
 					boatpoint = i;
 					break;
-					
+				case 7:
+					NF_CreateSprite(1, i+1, 13, 13, carte.obj_x[i], carte.obj_y[i]);
+					setMinus();
+					break;
+				case 8:
+					NF_CreateSprite(1, i+1, 14, 14, carte.obj_x[i], carte.obj_y[i]);
+					setMinus();
+					break;
+				case 9:
+					NF_CreateSprite(1, i+1, 15, 15, carte.obj_x[i], carte.obj_y[i]);
+					setMinus();
+					break;
 			}
 		}
 		else{

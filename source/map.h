@@ -13,6 +13,27 @@ void setLevel(){
     benin[1][1].object[0] = 1;
 	benin[1][1].obj_x[0] = 112;
 	benin[1][1].obj_y[0] = 64;
+    benin[1][1].object[7] = 8;
+    benin[1][1].obj_x[7] = 104;
+    benin[1][1].obj_y[7] = 8;
+    benin[1][1].object[1] = 8;
+    benin[1][1].obj_x[1] = 176;
+    benin[1][1].obj_y[1] = 16;
+    benin[1][1].object[2] = 8;
+    benin[1][1].obj_x[2] = 200;
+    benin[1][1].obj_y[2] = 80;
+    benin[1][1].object[3] = 8;
+    benin[1][1].obj_x[3] = 192;
+    benin[1][1].obj_y[3] = 152;
+    benin[1][1].object[4] = 8;
+    benin[1][1].obj_x[4] = 80;
+    benin[1][1].obj_y[4] = 152;
+    benin[1][1].object[5] = 8;
+    benin[1][1].obj_x[5] = 40;
+    benin[1][1].obj_y[5] = 104;
+    benin[1][1].object[6] = 8;
+    benin[1][1].obj_x[6] = 32;
+    benin[1][1].obj_y[6] = 32;
 	benin[1][1].background = "bg/level1";
 
     benin[1][2].object[0] = 1;
