@@ -9,7 +9,7 @@ def setY(str):
     else:
         return False
 
-is_y = input('2D? (y/n)')
+is_y = input('2D? (y/n): ')
 presen = setY(is_y)
 
 map_x = input('Coordonné X (0-2): ')

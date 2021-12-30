@@ -92,5 +92,15 @@ void loadCine(int id){
 			mainLoop();
 		}
 	}
-	NF_CreateTiledBg(0, 3, "bg/level1");
+	topSwitch();
+}
+void topSwitch(){
+	switch(levelindex){
+		case 0:
+			NF_CreateTiledBg(0, 3, "bg/level1");
+			break;
+		case 1:
+			NF_CreateTiledBg(0, 3, "bg/green");
+			break;
+	}
 }

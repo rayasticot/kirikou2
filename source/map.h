@@ -229,6 +229,9 @@ void setCine(){
     cinema[3].time[0] = 720;
 
     cinema[4].bg[0] = "bg/repito";
+    cinema[4].sound[0] = "sound/spain/repito";
+    cinema[4].hz[0] = 8000;
+    cinema[4].time[0] = 1620;
 
 }
 #endif

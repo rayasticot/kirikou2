@@ -6,6 +6,7 @@ bool checkCollision(int x1, int y1, int sx1, int sy1, int x2, int y2, int sx2, i
 void Title();
 void loadRoom(struct map carte, struct map old);
 void loadCine(int id);
+void topSwitch();
 void overWorld();
 void caveStart(int i, int x, int y);
 void caveUpdate(int i, struct map curr, struct map neww);
