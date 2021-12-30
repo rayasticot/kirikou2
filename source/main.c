@@ -40,6 +40,7 @@ struct map current;
 struct map old;
 
 
+#include "spritelist.h"
 #include "declarations.h"
 #include "functions.h"
 #include "kirikou.h"
@@ -76,6 +77,7 @@ int main(int argc, char **argv) {
     loadSprite(1, "sprite/kirikougun", 4, 16, 32, false);
     loadSprite(1, "sprite/titanic", 5, 32, 32, false);
 
+	setList();
 	switchSprite(0);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);

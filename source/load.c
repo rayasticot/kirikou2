@@ -105,9 +105,11 @@ void topSwitch(){
 	}
 }
 void switchSprite(int level){
+	int deb;
 	for(int i = 0; i < 11; i++){
-		if(list[level].link[i] != NULL){
-			loadSprite(1, list[level].link[i], i+6, list[level].size_x[i], list[level].size_y[i], false);
+		deb = i+6;
+		if(list[level].link[i] != 0){
+			loadSprite(1, list[level].link[i], deb, list[level].size_x[i], list[level].size_y[i], false);
 		}
 		else{
 			break;
