@@ -12,7 +12,7 @@ void setUi(){
     int zx = 0;
     int zy = 0;
     for(int i = 20; i < 29; i++){
-        NF_CreateSprite(0, i, 6, 6, pox[zx], pox[zy]);
+        NF_CreateSprite(0, i, 1, 1, pox[zx], pox[zy]);
         if(zx == 2){
             zx = 0;
             zy += 1;

@@ -19,7 +19,7 @@ void Ocean(struct map next){
 	NF_MoveSprite(1, 0, 256, 192);
 
 	NF_CreateTiledBg(1, 3, "bg/sea");
-    NF_CreateSprite(1, 1, 12, 12, boatx, 128);
+    NF_CreateSprite(1, 1, 5, 5, boatx, 128);
     while(boatx > -32){
         mainLoop();
         boatx -= 2;

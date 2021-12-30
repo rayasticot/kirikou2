@@ -32,6 +32,7 @@ extern struct map franc[3][3];
 extern struct map chine[3][3];
 extern struct map retour[3][3];
 extern struct map dung[5][4];
+extern struct spritelist list[5];
 extern struct cinematic cinema[10];
 extern struct map current;
 extern struct map old;

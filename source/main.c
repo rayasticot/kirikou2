@@ -10,6 +10,7 @@ struct map franc[3][3];
 struct map chine[3][3];
 struct map retour[3][3];
 struct map dung[5][4];
+struct spritelist list[5];
 struct cinematic cinema[10];
 
 int pos[3][3] = {
@@ -69,18 +70,13 @@ int main(int argc, char **argv) {
 	NF_LoadRawSound("sound/benin/npc0/h0", 0, 11025, 0);
 
     loadSprite(1, "sprite/nada", 0, 16, 32, false);
-    loadSprite(1, "sprite/maison", 1, 32, 32, false);
-    loadSprite(1, "sprite/npc0", 2, 16, 32, false);
-    loadSprite(1, "sprite/npc1", 3, 16, 32, false);
-    loadSprite(1, "sprite/npc2", 4, 16, 32, false);
-    loadSprite(1, "sprite/npc3", 5, 16, 32, false);
-    loadSprite(0, "sprite/ui", 6, 32, 32, false);
-    loadSprite(1, "sprite/cave", 7, 32, 32, false);
-    loadSprite(1, "sprite/kirikougun", 8, 16, 32, false);
-    loadSprite(1, "sprite/skulate", 9, 32, 32, false);
-    loadSprite(1, "sprite/bullets", 10, 8, 8, false);
-    loadSprite(1, "sprite/bole", 11, 32, 32, false);
-    loadSprite(1, "sprite/titanic", 12, 32, 32, false);
+    loadSprite(0, "sprite/ui", 1, 32, 32, false);
+    loadSprite(1, "sprite/bullets", 2, 8, 8, false);
+    loadSprite(1, "sprite/skulate", 3, 32, 32, false);
+    loadSprite(1, "sprite/kirikougun", 4, 16, 32, false);
+    loadSprite(1, "sprite/titanic", 5, 32, 32, false);
+
+	switchSprite(0);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);
 	NF_LoadTiledBg("bg/dodjiback", "bg/dodjiback", 256, 256);

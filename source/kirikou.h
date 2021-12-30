@@ -71,7 +71,7 @@ void kirikouUpdate(){
     NF_MoveSprite(1, 0, x, y);
 }
 void kirikouGunStart(){
-    NF_CreateSprite(1, 0, 8, 8, x, y);
+    NF_CreateSprite(1, 0, 4, 4, x, y);
 }
 void kirikouGunUpdate(){
     if(KEY_RIGHT & keysHeld()){
@@ -110,7 +110,7 @@ void kirikouGunUpdate(){
             bul = true;
             lock = true;
             buldir = NF_GetSpriteHflip(1, 0);
-            NF_CreateSprite(1, 12, 10, 10, bulx, buly);
+            NF_CreateSprite(1, 12, 2, 2, bulx, buly);
         }
     }
     NF_MoveSprite(1, 0, x, y);

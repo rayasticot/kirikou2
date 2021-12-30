@@ -27,7 +27,7 @@ void setLevel(){
     benin[1][2].object[3] = 2;
     benin[1][2].obj_x[3] = 96;
     benin[1][2].obj_y[3] = 120;
-    benin[1][2].npcsprite = 2;
+    benin[1][2].npcsprite = 7;
 	benin[1][2].background = "bg/level1";
     benin[1][2].sound[0] = "sound/benin/npc0/h0";
     benin[1][2].hz[0] = 11025;
@@ -49,7 +49,7 @@ void setLevel(){
     benin[2][1].object[2] = 2;
     benin[2][1].obj_x[2] = 176;
     benin[2][1].obj_y[2] = 64;
-    benin[2][1].npcsprite = 3;
+    benin[2][1].npcsprite = 8;
     benin[2][1].sound[0] = "sound/benin/npc1/h0";
     benin[2][1].hz[0] = 11025;
     benin[2][1].sound[1] = "sound/benin/npc1/h1";
@@ -67,7 +67,7 @@ void setLevel(){
     benin[2][2].object[1] = 2;
     benin[2][2].obj_x[1] = 88;
     benin[2][2].obj_y[1] = 32;
-    benin[2][2].npcsprite = 4;
+    benin[2][2].npcsprite = 9;
     benin[2][2].sound[0] = "sound/benin/npc2/h0";
     benin[2][2].hz[0] = 11025;
     benin[2][2].sound[1] = "sound/benin/npc2/h1";
@@ -94,7 +94,7 @@ void setLevel(){
     benin[0][1].object[4] = 2;
     benin[0][1].obj_x[4] = 192;
     benin[0][1].obj_y[4] = 64;
-    benin[0][1].npcsprite = 5;
+    benin[0][1].npcsprite = 10;
     benin[0][1].sound[0] = "sound/benin/npc3/h0";
     benin[0][1].hz[0] = 11025;
     benin[0][1].sound[1] = "sound/benin/npc3/h1";
@@ -118,7 +118,7 @@ void setLevel(){
     benin[2][0].object[3] = 5;
     benin[2][0].obj_x[3] = 104;
     benin[2][0].obj_y[3] = 40;
-    benin[2][0].npcsprite = 11;
+    benin[2][0].npcsprite = 12;
     benin[2][0].cinematic = 3;
 
     benin[1][0].object[0] = 1;
@@ -184,12 +184,12 @@ void setLevel(){
 
 
     //0.2;1.2;1.0;1.1;2.1
-    spain[1][2].object[0] = 5;
-    spain[1][2].obj_x[0] = 120;
-    spain[1][2].obj_y[0] = 32;
-    spain[1][2].background = "bg/green";
-    spain[1][2].npcsprite = 11;
-    spain[1][2].cinematic = 4;
+    spain[0][2].object[0] = 5;
+    spain[0][2].obj_x[0] = 120;
+    spain[0][2].obj_y[0] = 32;
+    spain[0][2].background = "bg/green";
+    spain[0][2].npcsprite = 12;
+    spain[0][2].cinematic = 4;
 }
 void setCine(){
 

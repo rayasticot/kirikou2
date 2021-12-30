@@ -21,4 +21,9 @@ struct cinematic{
 
 	char* bg[5];
 };
+struct spritelist{
+	char* link[11];
+	int size_x[11];
+	int size_y[11];
+};
 #endif

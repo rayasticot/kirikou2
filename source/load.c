@@ -22,7 +22,7 @@ void loadRoom(struct map carte, struct map old){
 		if(carte.object[i] > 0){
 			switch(carte.object[i]){
 				case 1:
-					NF_CreateSprite(1, i+1, 1, 1, carte.obj_x[i], carte.obj_y[i]);
+					NF_CreateSprite(1, i+1, 6, 6, carte.obj_x[i], carte.obj_y[i]);
 					npcpoint = -1;
 					cavepoint = -1;
 					bolepoint = -1;
@@ -37,7 +37,7 @@ void loadRoom(struct map carte, struct map old){
 					cavepoint = i;
 					break;
 				case 4:
-					skullStart(i, current, carte.obj_x[i], carte.obj_y[i], 9);
+					skullStart(i, current, carte.obj_x[i], carte.obj_y[i], 3);
 					if(skullpoint == 0){
 						skullpoint = i;
 					}
@@ -48,7 +48,7 @@ void loadRoom(struct map carte, struct map old){
 					bolepoint = i;
 					break;
 				case 6:
-					NF_CreateSprite(1, i+1, 12, 12, carte.obj_x[i], carte.obj_y[i]);
+					NF_CreateSprite(1, i+1, 5, 5, carte.obj_x[i], carte.obj_y[i]);
 					boatpoint = i;
 					break;
 					
@@ -102,5 +102,15 @@ void topSwitch(){
 		case 1:
 			NF_CreateTiledBg(0, 3, "bg/green");
 			break;
+	}
+}
+void switchSprite(int level){
+	for(int i = 0; i < 11; i++){
+		if(list[level].link[i] != NULL){
+			loadSprite(1, list[level].link[i], i+6, list[level].size_x[i], list[level].size_y[i], false);
+		}
+		else{
+			break;
+		}
 	}
 }

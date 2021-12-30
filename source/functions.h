@@ -7,6 +7,7 @@ void Title();
 void loadRoom(struct map carte, struct map old);
 void loadCine(int id);
 void topSwitch();
+void switchSprite(int level);
 void overWorld();
 void caveStart(int i, int x, int y);
 void caveUpdate(int i, struct map curr, struct map neww);
