@@ -256,15 +256,61 @@ void setLevel(){
 
 
     //0.2;1.2;1.0;1.1;2.1
-    spain[0][2].object[0] = 1;
-    spain[0][2].obj_x[0] = 32;
-    spain[0][2].obj_y[0] = 24;
-    spain[0][2].object[1] = 5;
-    spain[0][2].obj_x[1] = 120;
-    spain[0][2].obj_y[1] = 48;
+    spain[0][2].object[0] = 7;
+    spain[0][2].obj_x[0] = 24;
+    spain[0][2].obj_y[0] = 128;
+    spain[0][2].object[1] = 1;
+    spain[0][2].obj_x[1] = 32;
+    spain[0][2].obj_y[1] = 24;
+    spain[0][2].object[2] = 7;
+    spain[0][2].obj_x[2] = 192;
+    spain[0][2].obj_y[2] = 16;
+    spain[0][2].object[3] = 7;
+    spain[0][2].obj_x[3] = 200;
+    spain[0][2].obj_y[3] = 96;
+    spain[0][2].object[4] = 5;
+    spain[0][2].obj_x[4] = 120;
+    spain[0][2].obj_y[4] = 32;
+    spain[0][2].object[5] = 6;
+    spain[0][2].obj_x[5] = 104;
+    spain[0][2].obj_y[5] = 144;
     spain[0][2].background = "bg/green";
     spain[0][2].npcsprite = 12;
     spain[0][2].cinematic = 4;
+
+    spain[1][2].object[0] = 7;
+    spain[1][2].obj_x[0] = 16;
+    spain[1][2].obj_y[0] = 144;
+    spain[1][2].object[1] = 7;
+    spain[1][2].obj_x[1] = 32;
+    spain[1][2].obj_y[1] = 40;
+    spain[1][2].object[2] = 7;
+    spain[1][2].obj_x[2] = 120;
+    spain[1][2].obj_y[2] = 8;
+    spain[1][2].object[3] = 7;
+    spain[1][2].obj_x[3] = 184;
+    spain[1][2].obj_y[3] = 72;
+    spain[1][2].object[4] = 7;
+    spain[1][2].obj_x[4] = 184;
+    spain[1][2].obj_y[4] = 144;
+    spain[1][2].object[5] = 9;
+    spain[1][2].obj_x[5] = 88;
+    spain[1][2].obj_y[5] = 72;
+    spain[1][2].object[6] = 2;
+    spain[1][2].obj_x[6] = 96;
+    spain[1][2].obj_y[6] = 128;
+    spain[1][2].npcsprite = 7;
+    spain[1][2].sound[0] = "sound/spain/npc0/h0";
+    spain[1][2].hz[0] = 11025;
+    spain[1][2].sound[1] = "sound/spain/npc0/h1";
+    spain[1][2].hz[1] = 11025;
+    spain[1][2].sound[2] = "sound/spain/npc0/h2";
+    spain[1][2].hz[2] = 11025;
+    spain[1][2].sound[3] = "sound/spain/npc0/h0";
+    spain[1][2].hz[3] = 11025;
+    spain[1][2].sound[4] = "sound/spain/npc0/h1";
+    spain[1][2].hz[4] = 11025;
+
 }
 void setCine(){
 

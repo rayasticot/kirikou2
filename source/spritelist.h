@@ -80,7 +80,7 @@ void setList(){
     list[1].size_x[8] = 32;
     list[1].size_y[8] = 32;
 
-    list[1].link[9] = "sprite/be/taco";
+    list[1].link[9] = "sprite/sp/taco";
     list[1].size_x[9] = 64;
     list[1].size_y[9] = 32;
 }
