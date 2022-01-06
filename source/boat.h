@@ -5,7 +5,6 @@ void boatUpdate(int i){
         switch(gameState){
             case 1:
                 levelindex += 1;
-                switchSprite(1);
                 Ocean(spain[0][2]);
                 break;
         }

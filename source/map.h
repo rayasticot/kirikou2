@@ -256,9 +256,12 @@ void setLevel(){
 
 
     //0.2;1.2;1.0;1.1;2.1
-    spain[0][2].object[0] = 5;
-    spain[0][2].obj_x[0] = 120;
-    spain[0][2].obj_y[0] = 32;
+    spain[0][2].object[0] = 1;
+    spain[0][2].obj_x[0] = 32;
+    spain[0][2].obj_y[0] = 24;
+    spain[0][2].object[1] = 5;
+    spain[0][2].obj_x[1] = 120;
+    spain[0][2].obj_y[1] = 48;
     spain[0][2].background = "bg/green";
     spain[0][2].npcsprite = 12;
     spain[0][2].cinematic = 4;

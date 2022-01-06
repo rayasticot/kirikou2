@@ -25,6 +25,8 @@ void Ocean(struct map next){
         boatx -= 2;
         NF_MoveSprite(1, 1, boatx, 128);
     }
+	unloadLevelSprite();
+    switchSprite(levelindex);
 	NF_CreateTiledBg(0, 3, "bg/green");
     loadRoom(next, current);
 	topSwitch();

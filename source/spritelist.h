@@ -44,9 +44,9 @@ void setList(){
 
 
 
-    list[1].link[0] = "sprite/be/maison";
-    list[1].size_x[0] = 32;
-    list[1].size_y[0] = 32;
+    list[1].link[0] = "sprite/sp/hose";
+    list[1].size_x[0] = 64;
+    list[1].size_y[0] = 64;
 
     list[1].link[1] = "sprite/sp/npc0";
     list[1].size_x[1] = 16;
@@ -64,12 +64,24 @@ void setList(){
     list[1].size_x[4] = 16;
     list[1].size_y[4] = 32;
 
-    list[1].link[5] = "sprite/be/cave";
+    list[1].link[5] = "sprite/sp/hole";
     list[1].size_x[5] = 32;
     list[1].size_y[5] = 32;
 
     list[1].link[6] = "sprite/sp/rael";
-    list[1].size_x[6] = 32;
+    list[1].size_x[6] = 16;
     list[1].size_y[6] = 32;
+
+    list[1].link[7] = "sprite/sp/tree";
+    list[1].size_x[7] = 32;
+    list[1].size_y[7] = 32;
+
+    list[1].link[8] = "sprite/sp/paella";
+    list[1].size_x[8] = 32;
+    list[1].size_y[8] = 32;
+
+    list[1].link[9] = "sprite/be/taco";
+    list[1].size_x[9] = 64;
+    list[1].size_y[9] = 32;
 }
 #endif

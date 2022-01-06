@@ -25,7 +25,7 @@ int skullpoint;
 int bolepoint;
 int boatpoint;
 int skullnum;
-int gameState = 0;
+int gameState = 1;
 int levelindex = 0;
 int skullx[10];
 int skully[10];
@@ -102,7 +102,7 @@ int main(int argc, char **argv) {
 	loadRoom(benin[1][1], benin[1][1]);
 	setUi();
 	overWorld();
-
+	
 	while(1){
 		
 		mainLoop();

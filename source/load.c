@@ -118,14 +118,19 @@ void topSwitch(){
 	}
 }
 void switchSprite(int level){
-	int deb;
 	for(int i = 0; i < 11; i++){
-		deb = i+6;
 		if(list[level].link[i] != 0){
-			loadSprite(1, list[level].link[i], deb, list[level].size_x[i], list[level].size_y[i], false);
+			loadSprite(1, list[level].link[i], i+6, list[level].size_x[i], list[level].size_y[i], false);
 		}
 		else{
 			break;
 		}
+	}
+}
+void unloadLevelSprite(){ // Tous les slots doivent déjà être pris
+	for(int i = 0; i < 10; i++){
+		NF_UnloadSpriteGfx(i+6);
+		NF_UnloadSpritePal(i+6);
+		NF_FreeSpriteGfx(1, i+6);
 	}
 }
