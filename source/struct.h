@@ -1,9 +1,9 @@
 #ifndef STRUCT_H
 #define STRUCT_H
 struct map{
-    u8 object[10];
-    u8 obj_x[10];
-    u8 obj_y[10];
+    u8 object[16];
+    u8 obj_x[16];
+    u8 obj_y[16];
 	u8 npcsprite;
 
 	char* sound[5];

@@ -25,7 +25,7 @@ int skullpoint;
 int bolepoint;
 int boatpoint;
 int skullnum;
-int gameState = 0;
+int gameState = 1;
 int levelindex = 0;
 int skullx[10];
 int skully[10];
