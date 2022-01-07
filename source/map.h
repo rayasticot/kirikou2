@@ -311,6 +311,45 @@ void setLevel(){
     spain[1][2].sound[4] = "sound/spain/npc0/h1";
     spain[1][2].hz[4] = 11025;
 
+    spain[1][1].object[0] = 1;
+    spain[1][1].obj_x[0] = 160;
+    spain[1][1].obj_y[0] = 96;
+    spain[1][1].object[1] = 7;
+    spain[1][1].obj_x[1] = 200;
+    spain[1][1].obj_y[1] = 48;
+    spain[1][1].object[2] = 7;
+    spain[1][1].obj_x[2] = 136;
+    spain[1][1].obj_y[2] = 16;
+    spain[1][1].object[3] = 7;
+    spain[1][1].obj_x[3] = 64;
+    spain[1][1].obj_y[3] = 16;
+    spain[1][1].object[4] = 8;
+    spain[1][1].obj_x[4] = 16;
+    spain[1][1].obj_y[4] = 48;
+    spain[1][1].object[5] = 8;
+    spain[1][1].obj_x[5] = 56;
+    spain[1][1].obj_y[5] = 104;
+    spain[1][1].object[6] = 7;
+    spain[1][1].obj_x[6] = 56;
+    spain[1][1].obj_y[6] = 152;
+    spain[1][1].object[7] = 7;
+    spain[1][1].obj_x[7] = 0;
+    spain[1][1].obj_y[7] = 120;
+    spain[1][1].object[8] = 2;
+    spain[1][1].obj_x[8] = 128;
+    spain[1][1].obj_y[8] = 128;
+    spain[1][1].npcsprite = 9;
+    spain[1][1].sound[0] = "sound/spain/npc1/h0";
+    spain[1][1].hz[0] = 11025;
+    spain[1][1].sound[1] = "sound/spain/npc1/h1";
+    spain[1][1].hz[1] = 11025;
+    spain[1][1].sound[2] = "sound/spain/npc1/h2";
+    spain[1][1].hz[2] = 11025;
+    spain[1][1].sound[3] = "sound/spain/npc1/h0";
+    spain[1][1].hz[3] = 11025;
+    spain[1][1].sound[4] = "sound/spain/npc1/h1";
+    spain[1][1].hz[4] = 11025;
+
 }
 void setCine(){
 
