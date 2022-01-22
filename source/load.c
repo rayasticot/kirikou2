@@ -15,7 +15,7 @@ void loadRoom(struct map carte, struct map old){
 	skullnum = 0;
 	soundKill(0);
 	NF_ResetRawSoundBuffers();
-	for(int i = 0; i <= 15; i++){
+	for(int i = 0; i <= 10; i++){
 		if(old.object[i] > 0){
 			NF_MoveSprite(1, i+1, 256, 192);
 		}
@@ -23,7 +23,7 @@ void loadRoom(struct map carte, struct map old){
 			break;
 		}
 	}
-	for(int i = 0; i <= 15; i++){
+	for(int i = 0; i <= 10; i++){
 		if(carte.object[i] > 0){
 			switch(carte.object[i]){
 				case 1:
