@@ -5,12 +5,14 @@ void caveStart(int i, int x, int y){
 }
 void caveUpdate(int i, struct map curr, struct map neww){
     if(checkCollision(x, y, 16, 32, curr.obj_x[i], curr.obj_y[i], 32, 32) == true){
-        if(gameState == 0){
+        if(gameState == levelindex){
             old = current;
             loadRoom(neww, curr);
             x = 0;
             kirikouUpdate();
-            loadCine(1);
+            if(gameState == 0){
+                loadCine(1);
+            }
             Dungeon();
         }
     }

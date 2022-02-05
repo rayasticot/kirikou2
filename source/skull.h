@@ -32,6 +32,10 @@ void skullUpdate(int i){
     }
     if(checkCollision(bulx, buly, 8, 8, skullx[i], skully[i], 32, 32) == true){
         skullDeath(i);
+        bul = false;
+        lock = false;
+        bulx = 256;
+        NF_MoveSprite(1, 12, bulx, buly);
     }
 }
 void skullDeath(int i){

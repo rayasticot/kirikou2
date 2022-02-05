@@ -20,6 +20,7 @@ void Dungeon(){
 			skullUpdate(i);
 		}
 		if(cpos == 4){
+			cpos = 0;
 			gameState += 1;
 			x = old.obj_x[4];
 			y = old.obj_y[4];

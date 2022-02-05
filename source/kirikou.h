@@ -88,7 +88,7 @@ void kirikouGunUpdate(){
     if(KEY_UP & keysHeld()){
         y -= 1;
     }
-    if(x > 256 && mx < 2){
+    if(x > 256){
         opos = cpos;
         cpos += 1;
         x = 0;

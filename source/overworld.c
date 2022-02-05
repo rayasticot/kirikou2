@@ -16,7 +16,7 @@ void overWorld(){
 			npcUpdate(npcpoint, mx, my);
 		}
 		if(current.obj_x[cavepoint] != 0){
-			caveUpdate(cavepoint, current, dung[0][0]);
+			caveUpdate(cavepoint, current, dung[levelindex][0]);
 		}
 		if(current.obj_x[bolepoint] != 0){
 			boleUpdate(bolepoint, current);

@@ -7,8 +7,14 @@ void boatUpdate(int i){
                 if(levelindex == 0){
                     levelindex += 1;
                     Ocean(spain[0][2]);
-                    break;
                 }
+                break;
+            case 2:
+                if(levelindex == 1){
+                    levelindex += 1;
+                    Ocean(franc[0][2]);
+                }
+                break;
         }
     }
 }
