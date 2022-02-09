@@ -25,8 +25,8 @@ int skullpoint;
 int bolepoint;
 int boatpoint;
 int skullnum;
-int gameState = 0;
-int levelindex = 0;
+int gameState = 2;
+int levelindex = 1;
 int skullx[10];
 int skully[10];
 int dir[10];
@@ -92,6 +92,8 @@ int main(int argc, char **argv) {
 	NF_LoadTiledBg("bg/green", "bg/green", 256, 256);
 	NF_LoadTiledBg("bg/repito", "bg/repito", 256, 256);
 	NF_LoadTiledBg("bg/blacke", "bg/blacke", 256, 256);
+	NF_LoadTiledBg("bg/level4", "bg/rue", 256, 256);
+	NF_LoadTiledBg("bg/zetv", "bg/zetv", 256, 256);
 
 	setLevel();
 	setCine();

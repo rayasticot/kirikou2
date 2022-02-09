@@ -115,6 +115,9 @@ void topSwitch(){
 		case 1:
 			NF_CreateTiledBg(0, 3, "bg/green");
 			break;
+		case 2:
+			NF_CreateTiledBg(0, 3, "bg/rue");
+			break;
 	}
 }
 void switchSprite(int level){
