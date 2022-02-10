@@ -13,6 +13,7 @@ void caveUpdate(int i, struct map curr, struct map neww){
             if(gameState == 0){
                 loadCine(1);
             }
+			NF_LoadRawSound("sound/certe", 12, 11025, 0);
             Dungeon();
         }
     }

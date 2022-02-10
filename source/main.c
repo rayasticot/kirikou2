@@ -34,6 +34,7 @@ bool gun = false;
 int cpos = 0;
 int opos = 0;
 bool alive = true;
+bool dingue = false;
 
 struct map current;
 struct map old;

@@ -128,9 +128,6 @@ void movementCheckFin(){
             loadRoom(franc[mx][my], current);
             break;
         case 3:
-            loadRoom(chine[mx][my], current);
-            break;
-        case 4:
             loadRoom(retour[mx][my], current);
             break;
     }

@@ -13,8 +13,10 @@ void setMinus(){
 void loadRoom(struct map carte, struct map old){
 	uiUpdate();
 	skullnum = 0;
-	soundKill(0);
-	NF_ResetRawSoundBuffers();
+	if(dingue == false){
+		soundKill(0);
+		NF_ResetRawSoundBuffers();
+	}
 	for(int i = 0; i <= 10; i++){
 		if(old.object[i] > 0){
 			NF_MoveSprite(1, i+1, 256, 192);

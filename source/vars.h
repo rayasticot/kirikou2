@@ -25,6 +25,7 @@ extern int dir[10];
 extern int cpos;
 extern int opos;
 extern bool alive;
+extern bool dingue;
 
 extern struct map benin[3][3];
 extern struct map spain[3][3];
