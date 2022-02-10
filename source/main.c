@@ -7,9 +7,8 @@
 struct map benin[3][3];
 struct map spain[3][3];
 struct map franc[3][3];
-struct map chine[3][3];
 struct map retour[3][3];
-struct map dung[5][4];
+struct map dung[4][4];
 struct spritelist list[5];
 struct cinematic cinema[10];
 
@@ -25,8 +24,8 @@ int skullpoint;
 int bolepoint;
 int boatpoint;
 int skullnum;
-int gameState = 2;
-int levelindex = 1;
+int gameState = 0;
+int levelindex = 0;
 int skullx[10];
 int skully[10];
 int dir[10];
