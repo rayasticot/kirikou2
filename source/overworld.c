@@ -4,7 +4,6 @@
 
 #include "include.h"
 
-
 void overWorld(){
 
     while(1){
@@ -24,6 +23,5 @@ void overWorld(){
 		if(current.obj_x[boatpoint] != 0){
 			boatUpdate(boatpoint);
 		}
-
 	}
 }

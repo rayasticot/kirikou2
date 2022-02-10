@@ -126,5 +126,48 @@ void setList(){
     list[2].link[9] = "sprite/fr/teh";
     list[2].size_x[9] = 32;
     list[2].size_y[9] = 32;
+
+
+
+
+    list[3].link[0] = "sprite/re/maison";
+    list[3].size_x[0] = 32;
+    list[3].size_y[0] = 32;
+
+    list[3].link[1] = "sprite/re/re0";
+    list[3].size_x[1] = 32;
+    list[3].size_y[1] = 16;
+
+    list[3].link[2] = "sprite/re/re1";
+    list[3].size_x[2] = 32;
+    list[3].size_y[2] = 16;
+
+    list[3].link[3] = "sprite/re/re2";
+    list[3].size_x[3] = 32;
+    list[3].size_y[3] = 16;
+
+    list[3].link[4] = "sprite/re/re3";
+    list[3].size_x[4] = 32;
+    list[3].size_y[4] = 16;
+
+    list[3].link[5] = "sprite/be/cave";
+    list[3].size_x[5] = 32;
+    list[3].size_y[5] = 32;
+
+    list[3].link[6] = "sprite/be/bole";
+    list[3].size_x[6] = 32;
+    list[3].size_y[6] = 32;
+
+    list[3].link[7] = "sprite/re/obj0";
+    list[3].size_x[7] = 32;
+    list[3].size_y[7] = 32;
+
+    list[3].link[8] = "sprite/re/obj1";
+    list[3].size_x[8] = 32;
+    list[3].size_y[8] = 32;
+
+    list[3].link[9] = "sprite/re/obj2";
+    list[3].size_x[9] = 32;
+    list[3].size_y[9] = 32;
 }
 #endif

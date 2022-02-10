@@ -120,6 +120,9 @@ void topSwitch(){
 		case 2:
 			NF_CreateTiledBg(0, 3, "bg/rue");
 			break;
+		case 3:
+			NF_CreateTiledBg(0, 3, "bg/level1");
+			break;
 	}
 }
 void switchSprite(int level){

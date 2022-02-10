@@ -15,6 +15,12 @@ void boatUpdate(int i){
                     Ocean(franc[0][2]);
                 }
                 break;
+            case 3:
+                if(levelindex == 2){
+                    levelindex += 1;
+                    Ocean(retour[0][2]);
+                }
+                break;
         }
     }
 }
