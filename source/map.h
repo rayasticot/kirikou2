@@ -1180,20 +1180,45 @@ void setLevel(){
 }
 void setCine(){
 
-    cinema[0].bg[0] = "bg/dodjiback";
-    cinema[0].sound[0] = "sound/cine0";
+    cinema[0].bg[0] = "bg/c1";
+    cinema[0].sound[0] = "sound/benin/olosso";
     cinema[0].hz[0] = 11025;
-    cinema[0].time[0] = 370;
+    cinema[0].time[0] = 180;
 
-    cinema[0].bg[1] = "bg/kiriback";
-    cinema[0].sound[1] = "sound/cine1";
+    cinema[0].bg[1] = "bg/daronne";
+    cinema[0].sound[1] = "sound/benin/sein1";
     cinema[0].hz[1] = 11025;
-    cinema[0].time[1] = 240;
+    cinema[0].time[1] = 250;
 
-    cinema[0].bg[2] = "bg/dodjiback";
-    cinema[0].sound[2] = "sound/cine2";
+    cinema[0].bg[2] = "bg/kiriback";
+    cinema[0].sound[2] = "sound/benin/sein2";
     cinema[0].hz[2] = 11025;
-    cinema[0].time[2] = 180;
+    cinema[0].time[2] = 160;
+
+    cinema[0].bg[3] = "bg/daronne";
+    cinema[0].sound[3] = "sound/benin/sein3";
+    cinema[0].hz[3] = 11025;
+    cinema[0].time[3] = 960;
+
+    cinema[0].bg[4] = "bg/kiriback";
+    cinema[0].sound[4] = "sound/benin/sein4";
+    cinema[0].hz[4] = 11025;
+    cinema[0].time[4] = 120;
+
+    cinema[0].bg[5] = "bg/daronne";
+    cinema[0].sound[5] = "sound/benin/sein5";
+    cinema[0].hz[5] = 11025;
+    cinema[0].time[5] = 90;
+
+    cinema[0].bg[6] = "bg/kiriback";
+    cinema[0].sound[6] = "sound/benin/sein6";
+    cinema[0].hz[6] = 11025;
+    cinema[0].time[6] = 90;
+
+    cinema[0].bg[7] = "bg/daronne";
+    cinema[0].sound[7] = "sound/benin/sein7";
+    cinema[0].hz[7] = 11025;
+    cinema[0].time[7] = 400;
 
     cinema[1].bg[0] = "bg/guncine";
     cinema[1].sound[0] = "sound/void";
@@ -1224,5 +1249,40 @@ void setCine(){
     cinema[5].sound[0] = "sound/franc/zakved";
     cinema[5].hz[0] = 11025;
     cinema[5].time[0] = 1200;
+
+    cinema[6].bg[0] = "bg/c2";
+    cinema[6].sound[0] = "sound/hola";
+    cinema[6].hz[0] = 11025;
+    cinema[6].time[0] = 180;
+
+    cinema[6].bg[1] = "bg/kiriback";
+    cinema[6].sound[1] = "sound/ray0";
+    cinema[6].hz[1] = 11025;
+    cinema[6].time[1] = 330;
+
+    cinema[7].bg[0] = "bg/c3";
+    cinema[7].sound[0] = "sound/frasia";
+    cinema[7].hz[0] = 11025;
+    cinema[7].time[0] = 180;
+
+    cinema[7].bg[1] = "bg/kiriback";
+    cinema[7].sound[1] = "sound/moringa";
+    cinema[7].hz[1] = 11025;
+    cinema[7].time[1] = 360;
+
+    cinema[8].bg[0] = "bg/c4";
+    cinema[8].sound[0] = "sound/brise";
+    cinema[8].hz[0] = 11025;
+    cinema[8].time[0] = 180;
+
+    cinema[8].bg[1] = "bg/kiriback";
+    cinema[8].sound[1] = "sound/vengeanece";
+    cinema[8].hz[1] = 11025;
+    cinema[8].time[1] = 500;
+
+    cinema[9].bg[0] = "bg/geotte";
+    cinema[9].sound[0] = "sound/rouge";
+    cinema[9].hz[0] = 11025;
+    cinema[9].time[0] = 670;
 }
 #endif

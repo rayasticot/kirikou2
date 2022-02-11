@@ -88,7 +88,7 @@ void loadCine(int id){
 	NF_CreateTiledBg(0, 3, cinema[id].bg[0]);
 	NF_LoadRawSound(cinema[id].sound[0], 1, cinema[id].hz[0], 0);
 	NF_PlayRawSound(1, 127, 64, false, 0);
-	for(int i = 1; i < 5; i++){
+	for(int i = 1; i < 8; i++){
 		if(cinema[id].sound[i] != NULL){
 			NF_LoadRawSound(cinema[id].sound[i], i+1, cinema[id].hz[i], 0);
 		}
@@ -96,7 +96,7 @@ void loadCine(int id){
 	for(int i = 0; i < cinema[id].time[0]; i++){
 		mainLoop();
 	}
-	for(int i = 1; i < 5; i++){
+	for(int i = 1; i < 8; i++){
 		if(cinema[id].sound[i] != 0){
 			NF_PlayRawSound(i+1, 127, 64, false, 0);
 		}

@@ -24,8 +24,8 @@ int skullpoint;
 int bolepoint;
 int boatpoint;
 int skullnum;
-int gameState = 3;
-int levelindex = 2;
+int gameState = 0;
+int levelindex = 0;
 int skullx[10];
 int skully[10];
 int dir[10];
@@ -81,19 +81,24 @@ int main(int argc, char **argv) {
 	switchSprite(0);
 
 	NF_LoadTiledBg("bg/level1", "bg/level1", 256, 256);
-	NF_LoadTiledBg("bg/dodjiback", "bg/dodjiback", 256, 256);
+	NF_LoadTiledBg("bg/c1", "bg/c1", 256, 256);
+	NF_LoadTiledBg("bg/c2", "bg/c2", 256, 256);
+	NF_LoadTiledBg("bg/c3", "bg/c3", 256, 256);
+	NF_LoadTiledBg("bg/c4", "bg/c4", 256, 256);
 	NF_LoadTiledBg("bg/kiriback", "bg/kiriback", 256, 256);
 	NF_LoadTiledBg("bg/level4", "bg/bgcave", 256, 256);
 	NF_LoadTiledBg("bg/guncine", "bg/guncine", 256, 256);
 	NF_LoadTiledBg("bg/guncine1", "bg/guncine1", 256, 256);
 	NF_LoadTiledBg("bg/dead", "bg/dead", 256, 256);
 	NF_LoadTiledBg("bg/houche", "bg/houche", 256, 256);
-	NF_LoadTiledBg("bg/sea", "bg/sea", 256, 256);
+	NF_LoadTiledBg("bg/mer", "bg/sea", 256, 256);
 	NF_LoadTiledBg("bg/green", "bg/green", 256, 256);
 	NF_LoadTiledBg("bg/repito", "bg/repito", 256, 256);
 	NF_LoadTiledBg("bg/blacke", "bg/blacke", 256, 256);
 	NF_LoadTiledBg("bg/level4", "bg/rue", 256, 256);
 	NF_LoadTiledBg("bg/zetv", "bg/zetv", 256, 256);
+	NF_LoadTiledBg("bg/daronne", "bg/daronne", 256, 256);
+	NF_LoadTiledBg("bg/geotte", "bg/geotte", 256, 256);
 
 	setLevel();
 	setCine();

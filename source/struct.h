@@ -14,12 +14,12 @@ struct map{
 	u8 cinematic;
 };
 struct cinematic{
-	int time[5];
+	int time[8];
 
-	char* sound[5];
-	int hz[5];
+	char* sound[8];
+	int hz[8];
 
-	char* bg[5];
+	char* bg[8];
 };
 struct spritelist{
 	char* link[11];

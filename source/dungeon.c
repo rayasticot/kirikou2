@@ -35,6 +35,9 @@ void Dungeon(){
 			soundKill(1);
 			soundKill(2);
 
+			if(levelindex == 2){
+				loadCine(9);
+			}
 			loadRoom(old, current);
     		NF_MoveSprite(1, 12, 256, 192);
 			break;
