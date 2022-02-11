@@ -2,8 +2,8 @@
 #define STRUCT_H
 struct map{
     u8 object[10];
-    u8 obj_x[10];
-    u8 obj_y[10];
+    u16 obj_x[10];
+    u16 obj_y[10];
 	u8 npcsprite;
 
 	char* sound[5];
@@ -14,7 +14,7 @@ struct map{
 	u8 cinematic;
 };
 struct cinematic{
-	int time[8];
+	u16 time[8];
 
 	char* sound[8];
 	int hz[8];
@@ -23,7 +23,7 @@ struct cinematic{
 };
 struct spritelist{
 	char* link[11];
-	int size_x[11];
-	int size_y[11];
+	u8 size_x[11];
+	u8 size_y[11];
 };
 #endif
