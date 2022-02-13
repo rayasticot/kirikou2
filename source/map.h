@@ -1207,42 +1207,42 @@ void setCine(){
     cinema[0].bg[0] = "bg/c1";
     cinema[0].sound[0] = "sound/benin/olosso";
     cinema[0].hz[0] = 11025;
-    cinema[0].time[0] = 180;
+    cinema[0].time[0] = 1;//80;
 
     cinema[0].bg[1] = "bg/daronne";
     cinema[0].sound[1] = "sound/benin/sein1";
     cinema[0].hz[1] = 11025;
-    cinema[0].time[1] = 250;
+    cinema[0].time[1] = 2;//50;
 
     cinema[0].bg[2] = "bg/kiriback";
     cinema[0].sound[2] = "sound/benin/sein2";
     cinema[0].hz[2] = 11025;
-    cinema[0].time[2] = 160;
+    cinema[0].time[2] = 1;//60;
 
     cinema[0].bg[3] = "bg/daronne";
     cinema[0].sound[3] = "sound/benin/sein3";
     cinema[0].hz[3] = 11025;
-    cinema[0].time[3] = 960;
+    cinema[0].time[3] = 9;//60;
 
     cinema[0].bg[4] = "bg/kiriback";
     cinema[0].sound[4] = "sound/benin/sein4";
     cinema[0].hz[4] = 11025;
-    cinema[0].time[4] = 120;
+    cinema[0].time[4] = 1;//20;
 
     cinema[0].bg[5] = "bg/daronne";
     cinema[0].sound[5] = "sound/benin/sein5";
     cinema[0].hz[5] = 11025;
-    cinema[0].time[5] = 90;
+    cinema[0].time[5] = 9;//0;
 
     cinema[0].bg[6] = "bg/kiriback";
     cinema[0].sound[6] = "sound/benin/sein6";
     cinema[0].hz[6] = 11025;
-    cinema[0].time[6] = 90;
+    cinema[0].time[6] = 9;//0;
 
     cinema[0].bg[7] = "bg/daronne";
     cinema[0].sound[7] = "sound/benin/sein7";
     cinema[0].hz[7] = 11025;
-    cinema[0].time[7] = 400;
+    cinema[0].time[7] = 4;//00;
 
     cinema[1].bg[0] = "bg/guncine";
     cinema[1].sound[0] = "sound/void";

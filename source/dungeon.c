@@ -21,6 +21,9 @@ void Dungeon(){
 		for(int i = 0; i < 10; i++){
 			skullUpdate(i);
 		}
+		if(cpos == 1 && levelindex == 3){
+			Boss();
+		}
 		if(cpos == 4){
 			dingue = false;
 			cpos = 0;
@@ -44,8 +47,14 @@ void Dungeon(){
 		}
 		if(alive == false){
 			dingue = false;
-			Dead();
-			break;
+			if(levelindex != 3){
+				Dead();
+				break;
+			}
+			else{
+            	NF_MoveSprite(1, 19, 256, 192);
+				break;
+			}
 		}
 	}
 }

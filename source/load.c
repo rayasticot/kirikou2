@@ -5,10 +5,10 @@
 #include "include.h"
 
 void setMinus(){
-	npcpoint = -1;
-	cavepoint = -1;
-	bolepoint = -1;
-	boatpoint = -1;
+	npcpoint = -32;
+	cavepoint = -32;
+	bolepoint = -32;
+	boatpoint = -32;
 }
 void loadRoom(struct map carte, struct map old){
 	uiUpdate();

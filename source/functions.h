@@ -32,4 +32,5 @@ void boatUpdate(int i);
 void Ocean(struct map next);
 void setUi();
 void uiUpdate();
+void Boss();
 #endif
