@@ -32,14 +32,14 @@ void Karaba(){
         alive = false;
     }
     if(timer == 240){
-	    NF_PlayRawSound(11, 127, 64, false, 0);
+	    NF_PlayRawSound(11, 127, 127, false, 0);
     }
-    if(timer == 300){
-        tempx = x;
-    }
-    if(timer == 400){
-        timer = 0;
-        tempx = 224;
+    if(timer > 300){
+        tempx -= 4;
+        if(tempx < x-16){
+            tempx = 224;
+            timer = 0;
+        }
     }
     if(checkCollision(bulx, buly, 8, 8, tempx, karaba_h, 32, 64) == true){
         bul = false;
@@ -76,11 +76,20 @@ void Boss(){
 	NF_UnloadSpritePal(5);
 	NF_FreeSpriteGfx(1, 5);
 
-	NF_LoadRawSound("sound/kara2", 10, 11025, 0);
-	NF_LoadRawSound("sound/kara3", 11, 11025, 0);
-
     loadSprite(1, "sprite/re/karaba", 5, 32, 64, false);
     NF_CreateSprite(1, 19, 5, 5, 224, 0);
+
+    soundKill(0);
+	soundKill(1);
+	soundKill(2);
+
+    loadCine(10);
+
+    NF_LoadRawSound("sound/kara2", 10, 11025, 0);
+	NF_LoadRawSound("sound/kara3", 11, 11025, 0);
+	NF_LoadRawSound("sound/zzz", 12, 11025, 0);
+
+    NF_PlayRawSound(12, 127, 64, true, 0);
 
     karaba_h = 0;
     karaba_life = 10;
@@ -95,7 +104,7 @@ void Boss(){
 		bulletUpdate();
         Karaba();
         if(end == true){
-            NF_Error(1, "ds", 23);
+            loadCine(11);
         }
         if(alive == false){
             soundKill(0);

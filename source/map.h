@@ -1308,5 +1308,30 @@ void setCine(){
     cinema[9].sound[0] = "sound/rouge";
     cinema[9].hz[0] = 11025;
     cinema[9].time[0] = 670;
+
+    cinema[10].bg[0] = "bg/karaba";
+    cinema[10].sound[0] = "sound/kara0";
+    cinema[10].hz[0] = 11025;
+    cinema[10].time[0] = 240;
+
+    cinema[10].bg[1] = "bg/kiriback";
+    cinema[10].sound[1] = "sound/salope";
+    cinema[10].hz[1] = 11025;
+    cinema[10].time[1] = 60;
+
+    cinema[11].bg[0] = "bg/end0";
+    cinema[11].sound[0] = "sound/kara1";
+    cinema[11].hz[0] = 11025;
+    cinema[11].time[0] = 90;
+
+    cinema[11].bg[1] = "bg/end1";
+    cinema[11].sound[1] = "sound/pute";
+    cinema[11].hz[1] = 11025;
+    cinema[11].time[1] = 90;
+
+    cinema[11].bg[2] = "bg/end2";
+    cinema[11].sound[2] = "sound/kara4";
+    cinema[11].hz[2] = 11025;
+    cinema[11].time[2] = 140;
 }
 #endif

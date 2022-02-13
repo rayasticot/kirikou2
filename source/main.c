@@ -10,7 +10,7 @@ struct map franc[3][3];
 struct map retour[3][3];
 struct map dung[4][4];
 struct spritelist list[5];
-struct cinematic cinema[10];
+struct cinematic cinema[12];
 
 int pos[3][3] = {
 	{0, 0, 0},
@@ -99,6 +99,10 @@ int main(int argc, char **argv) {
 	NF_LoadTiledBg("bg/zetv", "bg/zetv", 256, 256);
 	NF_LoadTiledBg("bg/daronne", "bg/daronne", 256, 256);
 	NF_LoadTiledBg("bg/geotte", "bg/geotte", 256, 256);
+	NF_LoadTiledBg("bg/karaba", "bg/karaba", 256, 256);
+	NF_LoadTiledBg("bg/end0", "bg/end0", 256, 256);
+	NF_LoadTiledBg("bg/end1", "bg/end1", 256, 256);
+	NF_LoadTiledBg("bg/end2", "bg/end2", 256, 256);
 
 	setLevel();
 	setCine();
