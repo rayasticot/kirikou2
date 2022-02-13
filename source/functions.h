@@ -33,4 +33,5 @@ void Ocean(struct map next);
 void setUi();
 void uiUpdate();
 void Boss();
+void Credits();
 #endif

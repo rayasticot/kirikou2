@@ -35,6 +35,7 @@ int cpos = 0;
 int opos = 0;
 bool alive = true;
 bool dingue = false;
+bool end = false;
 
 struct map current;
 struct map old;
@@ -114,19 +115,10 @@ int main(int argc, char **argv) {
 	loadRoom(benin[1][1], benin[1][1]);
 	setUi();
 	overWorld();
-	
-	while(1){
-		
-		mainLoop();
-		scanKeys();
-		kirikouUpdate();
-		if(current.obj_x[npcpoint] != 0){
-			npcUpdate(npcpoint, mx, my);
-		}
-		if(current.obj_x[cavepoint] != 0){
-			caveUpdate(cavepoint, current, dung[0][0]);
-		}
+	Credits();
 
+	while(1){
+		mainLoop();
 	}
 
 	return 0;

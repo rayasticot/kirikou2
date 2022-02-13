@@ -8,10 +8,9 @@ u8 karaba_h = 0;
 u8 karaba_life = 10;
 u16 timer = 0;
 u8 invtime = 0;
-u16 tempx = 224;
+s16 tempx = 224;
 bool karaba_dir = false;
 bool karaba_inv = false;
-bool end = false;
 
 
 void Karaba(){
@@ -104,7 +103,11 @@ void Boss(){
 		bulletUpdate();
         Karaba();
         if(end == true){
+            soundKill(0);
+			soundKill(1);
+			soundKill(2);
             loadCine(11);
+            break;
         }
         if(alive == false){
             soundKill(0);

@@ -27,6 +27,7 @@ extern int opos;
 extern bool alive;
 extern bool dingue;
 extern u8 karaba_h;
+extern bool end;
 
 extern struct map benin[3][3];
 extern struct map spain[3][3];

@@ -23,6 +23,9 @@ void Dungeon(){
 		}
 		if(cpos == 1 && levelindex == 3){
 			Boss();
+			if(end == true){
+				break;
+			}
 		}
 		if(cpos == 4){
 			dingue = false;
