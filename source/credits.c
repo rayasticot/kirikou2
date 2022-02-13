@@ -11,8 +11,6 @@ char paul[7];
 
 
 void Credits(){
-    NF_MoveSprite(1, 0, 256, 192);
-
     NF_DeleteTiledBg(0, 3);
     NF_DeleteTiledBg(1, 3);
     NF_ResetTiledBgBuffers();
@@ -37,6 +35,7 @@ void Credits(){
     while(1){
         mainLoop();
         if(timmy == 1110){
+            soundKill(0);
             NF_PlayRawSound(1, 127, 64, false, 0);
         }
         if(jimmy == 270){

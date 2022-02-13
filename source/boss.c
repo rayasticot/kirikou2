@@ -12,7 +12,6 @@ s16 tempx = 224;
 bool karaba_dir = false;
 bool karaba_inv = false;
 
-
 void Karaba(){
     if(karaba_h == 0){
         karaba_dir = false;
@@ -107,6 +106,7 @@ void Boss(){
 			soundKill(1);
 			soundKill(2);
             loadCine(11);
+            NF_MoveSprite(1, 0, 256, 192);
             break;
         }
         if(alive == false){
