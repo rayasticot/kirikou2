@@ -10,6 +10,7 @@ int buly;
 bool buldir = false;
 bool bul = false;
 bool lock = false;
+u8 speed = 1;
 
 void movementCheckFin();
 
@@ -20,17 +21,23 @@ void kirikouStart(int px, int py){
     y = py;
 }
 void kirikouUpdate(){
+    if(KEY_B & keysHeld()){
+        speed = 2;
+    }
+    else{
+        speed = 1;
+    }
     if(KEY_RIGHT & keysHeld()){
-        x += 1;
+        x += speed;
     }
     if(KEY_LEFT & keysHeld()){
-        x -= 1;
+        x -= speed;
     }
     if(KEY_DOWN & keysHeld()){
-        y += 1;
+        y += speed;
     }
     if(KEY_UP & keysHeld()){
-        y -= 1;
+        y -= speed;
     }
     if(x > 256){
         x = 256;
