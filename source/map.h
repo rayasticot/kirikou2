@@ -901,10 +901,10 @@ void setLevel(){
     dung[2][0].obj_x[5] = 32;
     dung[2][0].obj_y[5] = 64;
     dung[2][0].object[6] = SKLT;
-    dung[2][0].obj_x[6] = 72;
+    dung[2][0].obj_x[6] = 104;
     dung[2][0].obj_y[6] = 112;
     dung[2][0].object[7] = SKLT;
-    dung[2][0].obj_x[7] = 72;
+    dung[2][0].obj_x[7] = 104;
     dung[2][0].obj_y[7] = 152;
     dung[2][0].object[8] = SKLT;
     dung[2][0].obj_x[8] = 200;

@@ -11,6 +11,7 @@ void overWorld(){
 		mainLoop();
 		scanKeys();
 		kirikouUpdate();
+		//uiUpdate(); Cassé
 		if(current.obj_x[npcpoint] != 0){
 			npcUpdate(npcpoint, mx, my);
 		}

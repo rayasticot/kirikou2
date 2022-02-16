@@ -72,7 +72,7 @@ int main(int argc, char **argv) {
 	NF_LoadRawSound("sound/benin/npc0/h0", 0, 11025, 0);
 
     loadSprite(1, "sprite/nada", 0, 16, 32, false);
-    loadSprite(0, "sprite/ui", 1, 32, 32, false);
+    loadSprite(0, "sprite/oui", 1, 32, 32, false);
     loadSprite(1, "sprite/bullets", 2, 8, 8, false);
     loadSprite(1, "sprite/skulate", 3, 32, 32, false);
     loadSprite(1, "sprite/kirikougun", 4, 16, 32, false);
@@ -113,7 +113,7 @@ int main(int argc, char **argv) {
 	loadCine(0);
 	kirikouStart(120, 120);
 	loadRoom(benin[1][1], benin[1][1]);
-	setUi();
+	//setUi();	Cassé
 	overWorld();
 	Credits();
 

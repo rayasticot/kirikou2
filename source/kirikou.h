@@ -21,7 +21,7 @@ void kirikouStart(int px, int py){
     y = py;
 }
 void kirikouUpdate(){
-    if(KEY_B & keysHeld()){
+    if(KEY_A & keysHeld()){
         speed = 2;
     }
     else{

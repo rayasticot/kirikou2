@@ -24,7 +24,7 @@ LIBNDS	:=	$(DEVKITPRO)/libnds
 
 GAME_TITLE	    :=	kirikou 2
 GAME_SUBTITLE1	:=	rayasticot
-GAME_SUBTITLE2	:=	15.02.2022 - 1.0.1
+GAME_SUBTITLE2	:=	16.02.2022 - 1.0.2
 GAME_ICON		:=	$(CURDIR)/../icon.bmp
 
 _ADDFILES	:=	-d $(NITRO_FILES)
