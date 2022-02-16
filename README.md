@@ -1,2 +1,2 @@
 # KIRIKOU 2
-LE VRAI KIRIKOU 2 SUR NINTENDO DS
+Jeu Kirikou sur Nintendo DS
